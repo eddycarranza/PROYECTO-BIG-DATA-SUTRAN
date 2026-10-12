@@ -69,12 +69,20 @@ Si la configuración es correcta, `config --quiet` termina sin mostrar contenido
 
 **Mantener la terminal en `Entorno_SUTRAN_HA` para los pasos siguientes.** Si se abre otra terminal en la raíz del proyecto, volver a ejecutar `cd .\Entorno_SUTRAN_HA`.
 
+Si Windows bloquea un script por la política de ejecución, ejecutar una vez en esa terminal y volver a intentar el comando:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
+Este ajuste dura hasta que se cierre la terminal.
+
 ## Probar el modelo guardado
 
 Esta es la forma más rápida de comprobar que el modelo funciona. Genera cinco predicciones sin descargar las fuentes ni repetir el entrenamiento:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\probar_modelo.ps1
+.\probar_modelo.ps1
 ```
 
 Al terminar debe aparecer un mensaje parecido a este:
@@ -108,17 +116,17 @@ Colocar los archivos directamente en `Datos_originales`, respetando el inventari
 En la terminal de Visual Studio Code, desde `Entorno_SUTRAN_HA`, iniciar y verificar el laboratorio:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\iniciar.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File .\verificar.ps1
+.\iniciar.ps1
+.\verificar.ps1
 ```
 
 La verificación consulta Hadoop y ejecuta una prueba de Spark. Debe aparecer `PRUEBA_OK`. Después, ejecutar estas etapas en orden:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\cargar_datos.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File .\ejecutar_pipeline.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File .\verificar_calidad.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File .\preparar_almacenamiento.ps1
+.\cargar_datos.ps1
+.\ejecutar_pipeline.ps1
+.\verificar_calidad.ps1
+.\preparar_almacenamiento.ps1
 ```
 
 Estos pasos cargan los originales, limpian e integran las fuentes, verifican la calidad y guardan las tablas en Parquet. El control de calidad debe terminar con estado `passed` antes de continuar.
@@ -130,7 +138,7 @@ Los informes quedan en `Proyecto_SUTRAN/documentation`. Los archivos `ultimo_*.j
 Después de completar el procesamiento:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\entrenar_modelo.ps1
+.\entrenar_modelo.ps1
 ```
 
 La primera ejecución prepara los datos y entrena el modelo. En `Proyecto_SUTRAN/documentation/modelo_42/entrenamiento` se crea una carpeta con `resultado_modelo.json` y `predicciones_prueba.csv`. `config/ultimo_modelo.json` identifica el modelo guardado en HDFS.
@@ -139,19 +147,19 @@ Si se cambió el procesamiento de los datos, regenerar el conjunto antes de entr
 
 ```powershell
 docker compose exec -T jupyter spark-submit --master yarn /project/scripts/preparar_modelo_42.py
-powershell -NoProfile -ExecutionPolicy Bypass -File .\entrenar_modelo.ps1
+.\entrenar_modelo.ps1
 ```
 
 Para usar el último modelo entrenado:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\predecir_modelo.ps1
+.\predecir_modelo.ps1
 ```
 
 Este comando predice las filas del conjunto de prueba y guarda `Proyecto_SUTRAN/documentation/predicciones.csv`. Si ya existe, elegir otro nombre con `-Salida`. Para un CSV propio:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\predecir_modelo.ps1 `
+.\predecir_modelo.ps1 `
     -Entrada /project/ejemplos/entrada_modelo.csv `
     -Salida /project/documentation/predicciones_nuevas.csv
 ```
@@ -178,16 +186,16 @@ La evaluación pronostica un mes cada vez usando el mes anterior observado. No p
 Después del procesamiento, la calidad y el almacenamiento:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\ejecutar_eda.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File .\comparar_velocidad.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File .\medir_optimizacion.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File .\auditar_seguridad_38.ps1
+.\ejecutar_eda.ps1
+.\comparar_velocidad.ps1
+.\medir_optimizacion.ps1
+.\auditar_seguridad_38.ps1
 ```
 
 Para la prueba de escalabilidad:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\probar_escalabilidad.ps1
+.\probar_escalabilidad.ps1
 ```
 
 Esta prueba requiere Python 3.11 en Windows, disponible con el comando `python`. Usa réplicas 1x, 10x y 100x para medir tiempos y recursos. Las réplicas quedan fuera del análisis y del entrenamiento. La velocidad de 2022 se analiza por separado: aquí no contamos con etiquetas de accidentes de ese año para entrenar.
@@ -219,7 +227,7 @@ Todos los servicios funcionan en una misma PC. La replicación de HDFS no proteg
 | `docker` no se reconoce | Instalar Docker Desktop y volver a abrir Visual Studio Code. |
 | No hay conexión con Docker | Abrir Docker Desktop y esperar a que `docker info` responda. |
 | Falta `.env` o `JUPYTER_TOKEN` | Ejecutar la configuración inicial. Si `.env` existe, comprobar que el token tenga un valor. |
-| El script está bloqueado | Usar los comandos completos de esta guía, que incluyen `-ExecutionPolicy Bypass`. |
+| El script está bloqueado | Aplicar el ajuste temporal indicado en «Preparar el entorno» y volver a ejecutar el script. |
 | La salida ya existe | Elegir otro nombre con `-Salida`. `probar_modelo.ps1` lo hace automáticamente. |
 | El CSV aparece en una sola columna en Excel | Importar desde **Datos → Desde texto/CSV** y elegir coma como separador. |
 | El SHA-256 no coincide | Revisar la versión del original; no cambiar el hash para saltarse la validación. |
