@@ -1,0 +1,411 @@
+{
+  "status": "success",
+  "layout_id": "20261008T205415Z_7534de98",
+  "pipeline_run": "20261008T203141Z_83442227",
+  "application_id": "application_1791488189127_0006",
+  "tables": {
+    "standardized/accidentes": {
+      "source": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/accidentes",
+      "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/accidentes",
+      "rows": 8148,
+      "partition_columns": [],
+      "count_verified": true,
+      "schema_verified": true,
+      "multiset_verified": true,
+      "before": {
+        "parquet_files": 1,
+        "logical_bytes": 634976,
+        "replicated_bytes": 1904928,
+        "files": [
+          {
+            "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/accidentes/part-00000-d681c109-29f7-45e2-b466-ae84466c0a04-c000.snappy.parquet",
+            "bytes": 634976,
+            "replication": 3
+          }
+        ]
+      },
+      "after": {
+        "parquet_files": 1,
+        "logical_bytes": 634999,
+        "replicated_bytes": 1904997,
+        "files": [
+          {
+            "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/accidentes/part-00000-75f5853a-dd02-4775-b03d-e406e3d042f2-c000.snappy.parquet",
+            "bytes": 634999,
+            "replication": 3
+          }
+        ]
+      }
+    },
+    "standardized/velocidad_2019_2021": {
+      "source": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/velocidad_2019_2021",
+      "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/velocidad_2019_2021",
+      "rows": 160018,
+      "partition_columns": [
+        "anio_particion"
+      ],
+      "count_verified": true,
+      "schema_verified": true,
+      "multiset_verified": true,
+      "before": {
+        "parquet_files": 1,
+        "logical_bytes": 12588102,
+        "replicated_bytes": 37764306,
+        "files": [
+          {
+            "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/velocidad_2019_2021/part-00000-17a8f730-46fe-4b0d-bce1-08e4d351f722-c000.snappy.parquet",
+            "bytes": 12588102,
+            "replication": 3
+          }
+        ]
+      },
+      "after": {
+        "parquet_files": 3,
+        "logical_bytes": 12606591,
+        "replicated_bytes": 37819773,
+        "files": [
+          {
+            "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/velocidad_2019_2021/anio_particion=2019/part-00001-b666b432-50aa-4e59-8115-1815f26b9fe4.c000.snappy.parquet",
+            "bytes": 400007,
+            "replication": 3
+          },
+          {
+            "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/velocidad_2019_2021/anio_particion=2020/part-00000-b666b432-50aa-4e59-8115-1815f26b9fe4.c000.snappy.parquet",
+            "bytes": 5331479,
+            "replication": 3
+          },
+          {
+            "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/velocidad_2019_2021/anio_particion=2021/part-00001-b666b432-50aa-4e59-8115-1815f26b9fe4.c000.snappy.parquet",
+            "bytes": 6875105,
+            "replication": 3
+          }
+        ]
+      },
+      "partitions": [
+        {
+          "anio_particion": 2019,
+          "count": 4867
+        },
+        {
+          "anio_particion": 2020,
+          "count": 67833
+        },
+        {
+          "anio_particion": 2021,
+          "count": 87318
+        }
+      ],
+      "query_2021_rows": 87318,
+      "partition_filter_verified": true
+    },
+    "standardized/velocidad_2022_reserva": {
+      "source": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/velocidad_2022_reserva",
+      "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/velocidad_2022_reserva",
+      "rows": 103092,
+      "partition_columns": [],
+      "count_verified": true,
+      "schema_verified": true,
+      "multiset_verified": true,
+      "before": {
+        "parquet_files": 2,
+        "logical_bytes": 7590761,
+        "replicated_bytes": 22772283,
+        "files": [
+          {
+            "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/velocidad_2022_reserva/part-00000-7554d410-1f3f-47dd-899e-8a88f8f523a4-c000.snappy.parquet",
+            "bytes": 3779434,
+            "replication": 3
+          },
+          {
+            "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/velocidad_2022_reserva/part-00001-7554d410-1f3f-47dd-899e-8a88f8f523a4-c000.snappy.parquet",
+            "bytes": 3811327,
+            "replication": 3
+          }
+        ]
+      },
+      "after": {
+        "parquet_files": 1,
+        "logical_bytes": 7562781,
+        "replicated_bytes": 22688343,
+        "files": [
+          {
+            "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/velocidad_2022_reserva/part-00000-47937875-95e8-4a51-91ed-bedb9100a334-c000.snappy.parquet",
+            "bytes": 7562781,
+            "replication": 3
+          }
+        ]
+      }
+    },
+    "standardized/flujo_peajes": {
+      "source": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/flujo_peajes",
+      "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/flujo_peajes",
+      "rows": 11454,
+      "partition_columns": [],
+      "count_verified": true,
+      "schema_verified": true,
+      "multiset_verified": true,
+      "before": {
+        "parquet_files": 1,
+        "logical_bytes": 2040261,
+        "replicated_bytes": 6120783,
+        "files": [
+          {
+            "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/flujo_peajes/part-00000-7174ed34-a4fd-4d01-a00b-3e3b2e42d248-c000.snappy.parquet",
+            "bytes": 2040261,
+            "replication": 3
+          }
+        ]
+      },
+      "after": {
+        "parquet_files": 1,
+        "logical_bytes": 2040287,
+        "replicated_bytes": 6120861,
+        "files": [
+          {
+            "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/flujo_peajes/part-00000-b76183df-440a-4de6-889c-90bedc8136c6-c000.snappy.parquet",
+            "bytes": 2040287,
+            "replication": 3
+          }
+        ]
+      }
+    },
+    "standardized/pesaje_2021_contexto": {
+      "source": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/pesaje_2021_contexto",
+      "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/pesaje_2021_contexto",
+      "rows": 36,
+      "partition_columns": [],
+      "count_verified": true,
+      "schema_verified": true,
+      "multiset_verified": true,
+      "before": {
+        "parquet_files": 1,
+        "logical_bytes": 12826,
+        "replicated_bytes": 38478,
+        "files": [
+          {
+            "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/pesaje_2021_contexto/part-00000-bb36a31a-5259-4cc5-8daa-b9c74183d678-c000.snappy.parquet",
+            "bytes": 12826,
+            "replication": 3
+          }
+        ]
+      },
+      "after": {
+        "parquet_files": 1,
+        "logical_bytes": 12846,
+        "replicated_bytes": 38538,
+        "files": [
+          {
+            "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/pesaje_2021_contexto/part-00000-7710dad8-6e43-46b1-8032-91ed1365a876-c000.snappy.parquet",
+            "bytes": 12846,
+            "replication": 3
+          }
+        ]
+      }
+    },
+    "standardized/pesaje_2022_reserva": {
+      "source": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/pesaje_2022_reserva",
+      "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/pesaje_2022_reserva",
+      "rows": 36,
+      "partition_columns": [],
+      "count_verified": true,
+      "schema_verified": true,
+      "multiset_verified": true,
+      "before": {
+        "parquet_files": 1,
+        "logical_bytes": 12826,
+        "replicated_bytes": 38478,
+        "files": [
+          {
+            "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/pesaje_2022_reserva/part-00000-fcc85a00-ddfa-48ae-99cd-fc3ce9a86916-c000.snappy.parquet",
+            "bytes": 12826,
+            "replication": 3
+          }
+        ]
+      },
+      "after": {
+        "parquet_files": 1,
+        "logical_bytes": 12846,
+        "replicated_bytes": 38538,
+        "files": [
+          {
+            "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/pesaje_2022_reserva/part-00000-d71b106f-a63a-48e7-983a-5a9a279422b1-c000.snappy.parquet",
+            "bytes": 12846,
+            "replication": 3
+          }
+        ]
+      }
+    },
+    "standardized/red_vial_2018_atributos": {
+      "source": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/red_vial_2018_atributos",
+      "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/red_vial_2018_atributos",
+      "rows": 4546,
+      "partition_columns": [],
+      "count_verified": true,
+      "schema_verified": true,
+      "multiset_verified": true,
+      "before": {
+        "parquet_files": 2,
+        "logical_bytes": 573543,
+        "replicated_bytes": 1720629,
+        "files": [
+          {
+            "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/red_vial_2018_atributos/part-00000-0217634e-1484-4062-a7fa-d41d3cc16cfd-c000.snappy.parquet",
+            "bytes": 258405,
+            "replication": 3
+          },
+          {
+            "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/red_vial_2018_atributos/part-00001-0217634e-1484-4062-a7fa-d41d3cc16cfd-c000.snappy.parquet",
+            "bytes": 315138,
+            "replication": 3
+          }
+        ]
+      },
+      "after": {
+        "parquet_files": 1,
+        "logical_bytes": 553267,
+        "replicated_bytes": 1659801,
+        "files": [
+          {
+            "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/red_vial_2018_atributos/part-00000-fa5b6904-0e74-4c0a-81f6-2328c1a01fb4-c000.snappy.parquet",
+            "bytes": 553267,
+            "replication": 3
+          }
+        ]
+      }
+    },
+    "curated/dimension_ruta_departamento_2018": {
+      "source": "hdfs://sutran/sutran/curated/run=20261008T203141Z_83442227/dimension_ruta_departamento_2018",
+      "path": "hdfs://sutran/sutran/curated/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/dimension_ruta_departamento_2018",
+      "rows": 248,
+      "partition_columns": [],
+      "count_verified": true,
+      "schema_verified": true,
+      "multiset_verified": true,
+      "before": {
+        "parquet_files": 1,
+        "logical_bytes": 2199,
+        "replicated_bytes": 6597,
+        "files": [
+          {
+            "path": "hdfs://sutran/sutran/curated/run=20261008T203141Z_83442227/dimension_ruta_departamento_2018/part-00000-492a20ca-e8f6-4f58-92dc-21870d701acc-c000.snappy.parquet",
+            "bytes": 2199,
+            "replication": 3
+          }
+        ]
+      },
+      "after": {
+        "parquet_files": 1,
+        "logical_bytes": 2199,
+        "replicated_bytes": 6597,
+        "files": [
+          {
+            "path": "hdfs://sutran/sutran/curated/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/dimension_ruta_departamento_2018/part-00000-8e2af28b-13e6-4d69-bc07-aa748e8c22b1-c000.snappy.parquet",
+            "bytes": 2199,
+            "replication": 3
+          }
+        ]
+      }
+    },
+    "curated/accidentes_ruta_departamento_mes": {
+      "source": "hdfs://sutran/sutran/curated/run=20261008T203141Z_83442227/accidentes_ruta_departamento_mes",
+      "path": "hdfs://sutran/sutran/curated/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/accidentes_ruta_departamento_mes",
+      "rows": 845,
+      "partition_columns": [],
+      "count_verified": true,
+      "schema_verified": true,
+      "multiset_verified": true,
+      "before": {
+        "parquet_files": 1,
+        "logical_bytes": 7526,
+        "replicated_bytes": 22578,
+        "files": [
+          {
+            "path": "hdfs://sutran/sutran/curated/run=20261008T203141Z_83442227/accidentes_ruta_departamento_mes/part-00000-53787fa4-7059-4536-935f-7c1c65f5ccc6-c000.snappy.parquet",
+            "bytes": 7526,
+            "replication": 3
+          }
+        ]
+      },
+      "after": {
+        "parquet_files": 1,
+        "logical_bytes": 7536,
+        "replicated_bytes": 22608,
+        "files": [
+          {
+            "path": "hdfs://sutran/sutran/curated/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/accidentes_ruta_departamento_mes/part-00000-f21241ad-a49f-40bc-9e07-08d85ef3caf5-c000.snappy.parquet",
+            "bytes": 7536,
+            "replication": 3
+          }
+        ]
+      }
+    },
+    "curated/integracion_departamento_mes_2021": {
+      "source": "hdfs://sutran/sutran/curated/run=20261008T203141Z_83442227/integracion_departamento_mes_2021",
+      "path": "hdfs://sutran/sutran/curated/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/integracion_departamento_mes_2021",
+      "rows": 218,
+      "partition_columns": [],
+      "count_verified": true,
+      "schema_verified": true,
+      "multiset_verified": true,
+      "before": {
+        "parquet_files": 1,
+        "logical_bytes": 8436,
+        "replicated_bytes": 25308,
+        "files": [
+          {
+            "path": "hdfs://sutran/sutran/curated/run=20261008T203141Z_83442227/integracion_departamento_mes_2021/part-00000-323ad21b-1c6f-4aa0-927e-97ae126a3983-c000.snappy.parquet",
+            "bytes": 8436,
+            "replication": 3
+          }
+        ]
+      },
+      "after": {
+        "parquet_files": 1,
+        "logical_bytes": 8465,
+        "replicated_bytes": 25395,
+        "files": [
+          {
+            "path": "hdfs://sutran/sutran/curated/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/integracion_departamento_mes_2021/part-00000-9be2aa2b-9c70-481b-8a9d-685042f2dfd9-c000.snappy.parquet",
+            "bytes": 8465,
+            "replication": 3
+          }
+        ]
+      }
+    },
+    "serving/indicadores_departamento_mes_2021": {
+      "source": "hdfs://sutran/sutran/serving/run=20261008T203141Z_83442227/indicadores_departamento_mes_2021",
+      "path": "hdfs://sutran/sutran/serving/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/indicadores_departamento_mes_2021",
+      "rows": 218,
+      "partition_columns": [],
+      "count_verified": true,
+      "schema_verified": true,
+      "multiset_verified": true,
+      "before": {
+        "parquet_files": 1,
+        "logical_bytes": 8436,
+        "replicated_bytes": 25308,
+        "files": [
+          {
+            "path": "hdfs://sutran/sutran/serving/run=20261008T203141Z_83442227/indicadores_departamento_mes_2021/part-00000-5f889717-0a97-4d6e-a514-6db30ef6277e-c000.snappy.parquet",
+            "bytes": 8436,
+            "replication": 3
+          }
+        ]
+      },
+      "after": {
+        "parquet_files": 1,
+        "logical_bytes": 8465,
+        "replicated_bytes": 25395,
+        "files": [
+          {
+            "path": "hdfs://sutran/sutran/serving/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/indicadores_departamento_mes_2021/part-00000-ef27a918-5a70-412c-9ef7-8a63bfdefaa1-c000.snappy.parquet",
+            "bytes": 8465,
+            "replication": 3
+          }
+        ]
+      }
+    }
+  },
+  "format": "parquet",
+  "compression": "snappy"
+}

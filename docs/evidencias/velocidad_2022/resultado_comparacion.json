@@ -1,0 +1,369 @@
+{
+  "status": "success",
+  "run_id": "20261008T235937Z_c5228382",
+  "pipeline_run": "20261008T203141Z_83442227",
+  "eda_run": "20261008T230253Z_13e8446c",
+  "application_id": "application_1791488189127_0014",
+  "synthetic_data_used": false,
+  "accidents_2022_used": false,
+  "historical_source_records": 160018,
+  "source_2022_records": 103092,
+  "yearly": [
+    {
+      "anio": 2021,
+      "registros": 87318,
+      "primera_fecha": "2021-01-01",
+      "ultima_fecha": "2021-10-03",
+      "departamentos": 10,
+      "exceso_promedio_kmh": 22.386335005382623,
+      "registros_exceso_no_positivo": 0
+    },
+    {
+      "anio": 2022,
+      "registros": 103092,
+      "primera_fecha": "2022-01-01",
+      "ultima_fecha": "2022-12-31",
+      "departamentos": 10,
+      "exceso_promedio_kmh": 20.95355604702596,
+      "registros_exceso_no_positivo": 0
+    }
+  ],
+  "monthly": [
+    {
+      "anio": 2021,
+      "mes_numero": 1,
+      "registros": 14744,
+      "primera_fecha": "2021-01-01",
+      "ultima_fecha": "2021-01-31",
+      "departamentos": 10,
+      "dias_con_registros": 31,
+      "exceso_promedio_kmh": 23.65796256104178
+    },
+    {
+      "anio": 2021,
+      "mes_numero": 2,
+      "registros": 10325,
+      "primera_fecha": "2021-02-01",
+      "ultima_fecha": "2021-02-28",
+      "departamentos": 10,
+      "dias_con_registros": 28,
+      "exceso_promedio_kmh": 23.15535108958838
+    },
+    {
+      "anio": 2021,
+      "mes_numero": 3,
+      "registros": 13350,
+      "primera_fecha": "2021-03-01",
+      "ultima_fecha": "2021-03-31",
+      "departamentos": 10,
+      "dias_con_registros": 30,
+      "exceso_promedio_kmh": 22.80007490636704
+    },
+    {
+      "anio": 2021,
+      "mes_numero": 4,
+      "registros": 12591,
+      "primera_fecha": "2021-04-01",
+      "ultima_fecha": "2021-04-30",
+      "departamentos": 10,
+      "dias_con_registros": 28,
+      "exceso_promedio_kmh": 22.442300055595265
+    },
+    {
+      "anio": 2021,
+      "mes_numero": 5,
+      "registros": 6930,
+      "primera_fecha": "2021-05-01",
+      "ultima_fecha": "2021-05-31",
+      "departamentos": 10,
+      "dias_con_registros": 30,
+      "exceso_promedio_kmh": 22.101443001443002
+    },
+    {
+      "anio": 2021,
+      "mes_numero": 6,
+      "registros": 5627,
+      "primera_fecha": "2021-06-01",
+      "ultima_fecha": "2021-06-30",
+      "departamentos": 10,
+      "dias_con_registros": 26,
+      "exceso_promedio_kmh": 22.199928914163852
+    },
+    {
+      "anio": 2021,
+      "mes_numero": 7,
+      "registros": 13098,
+      "primera_fecha": "2021-07-01",
+      "ultima_fecha": "2021-07-31",
+      "departamentos": 10,
+      "dias_con_registros": 31,
+      "exceso_promedio_kmh": 22.257214841960604
+    },
+    {
+      "anio": 2021,
+      "mes_numero": 8,
+      "registros": 5556,
+      "primera_fecha": "2021-08-01",
+      "ultima_fecha": "2021-08-31",
+      "departamentos": 2,
+      "dias_con_registros": 31,
+      "exceso_promedio_kmh": 19.683585313174945
+    },
+    {
+      "anio": 2021,
+      "mes_numero": 9,
+      "registros": 4504,
+      "primera_fecha": "2021-09-01",
+      "ultima_fecha": "2021-09-30",
+      "departamentos": 4,
+      "dias_con_registros": 30,
+      "exceso_promedio_kmh": 19.514653641207815
+    },
+    {
+      "anio": 2021,
+      "mes_numero": 10,
+      "registros": 593,
+      "primera_fecha": "2021-10-01",
+      "ultima_fecha": "2021-10-03",
+      "departamentos": 4,
+      "dias_con_registros": 3,
+      "exceso_promedio_kmh": 21.96121416526138
+    },
+    {
+      "anio": 2022,
+      "mes_numero": 1,
+      "registros": 10469,
+      "primera_fecha": "2022-01-01",
+      "ultima_fecha": "2022-01-31",
+      "departamentos": 5,
+      "dias_con_registros": 31,
+      "exceso_promedio_kmh": 20.467570923679435
+    },
+    {
+      "anio": 2022,
+      "mes_numero": 2,
+      "registros": 12563,
+      "primera_fecha": "2022-02-01",
+      "ultima_fecha": "2022-02-28",
+      "departamentos": 7,
+      "dias_con_registros": 28,
+      "exceso_promedio_kmh": 20.61044336543819
+    },
+    {
+      "anio": 2022,
+      "mes_numero": 3,
+      "registros": 8813,
+      "primera_fecha": "2022-03-01",
+      "ultima_fecha": "2022-03-31",
+      "departamentos": 7,
+      "dias_con_registros": 31,
+      "exceso_promedio_kmh": 20.214002042437308
+    },
+    {
+      "anio": 2022,
+      "mes_numero": 4,
+      "registros": 9346,
+      "primera_fecha": "2022-04-01",
+      "ultima_fecha": "2022-04-30",
+      "departamentos": 9,
+      "dias_con_registros": 29,
+      "exceso_promedio_kmh": 20.88808046222983
+    },
+    {
+      "anio": 2022,
+      "mes_numero": 5,
+      "registros": 8178,
+      "primera_fecha": "2022-05-01",
+      "ultima_fecha": "2022-05-31",
+      "departamentos": 8,
+      "dias_con_registros": 31,
+      "exceso_promedio_kmh": 21.817314746881877
+    },
+    {
+      "anio": 2022,
+      "mes_numero": 6,
+      "registros": 9402,
+      "primera_fecha": "2022-06-01",
+      "ultima_fecha": "2022-06-30",
+      "departamentos": 9,
+      "dias_con_registros": 30,
+      "exceso_promedio_kmh": 21.96553924696873
+    },
+    {
+      "anio": 2022,
+      "mes_numero": 7,
+      "registros": 10814,
+      "primera_fecha": "2022-07-01",
+      "ultima_fecha": "2022-07-31",
+      "departamentos": 8,
+      "dias_con_registros": 31,
+      "exceso_promedio_kmh": 20.22489365637137
+    },
+    {
+      "anio": 2022,
+      "mes_numero": 8,
+      "registros": 8654,
+      "primera_fecha": "2022-08-01",
+      "ultima_fecha": "2022-08-31",
+      "departamentos": 2,
+      "dias_con_registros": 31,
+      "exceso_promedio_kmh": 20.4136815345505
+    },
+    {
+      "anio": 2022,
+      "mes_numero": 9,
+      "registros": 5907,
+      "primera_fecha": "2022-09-01",
+      "ultima_fecha": "2022-09-30",
+      "departamentos": 5,
+      "dias_con_registros": 29,
+      "exceso_promedio_kmh": 21.824445573048926
+    },
+    {
+      "anio": 2022,
+      "mes_numero": 10,
+      "registros": 3583,
+      "primera_fecha": "2022-10-01",
+      "ultima_fecha": "2022-10-31",
+      "departamentos": 8,
+      "dias_con_registros": 30,
+      "exceso_promedio_kmh": 22.592241138710577
+    },
+    {
+      "anio": 2022,
+      "mes_numero": 11,
+      "registros": 6382,
+      "primera_fecha": "2022-11-01",
+      "ultima_fecha": "2022-11-30",
+      "departamentos": 9,
+      "dias_con_registros": 30,
+      "exceso_promedio_kmh": 20.918207458476967
+    },
+    {
+      "anio": 2022,
+      "mes_numero": 12,
+      "registros": 8981,
+      "primera_fecha": "2022-12-01",
+      "ultima_fecha": "2022-12-31",
+      "departamentos": 7,
+      "dias_con_registros": 31,
+      "exceso_promedio_kmh": 21.14408195078499
+    }
+  ],
+  "paired_units": 54,
+  "paired_departments": 9,
+  "paired_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "excluded_boundary_months": {
+    "2021": [
+      10
+    ],
+    "2022": []
+  },
+  "common_calendar_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "comparable": {
+    "records_2021": 77051,
+    "records_2022": 83171,
+    "excess_mean_2021": 22.567169796628207,
+    "excess_mean_2022": 20.856211900782725,
+    "difference_kmh": -1.7109578958454819
+  },
+  "monthly_paired": [
+    {
+      "mes_numero": 1,
+      "registros_2021": 11090,
+      "registros_2022": 10452,
+      "exceso_promedio_2021": 24.817583408476104,
+      "exceso_promedio_2022": 20.483065442020667,
+      "departamentos_comunes": 4
+    },
+    {
+      "mes_numero": 2,
+      "registros_2021": 9245,
+      "registros_2022": 12563,
+      "exceso_promedio_2021": 23.47366143861547,
+      "exceso_promedio_2022": 20.61044336543819,
+      "departamentos_comunes": 7
+    },
+    {
+      "mes_numero": 3,
+      "registros_2021": 10575,
+      "registros_2022": 8808,
+      "exceso_promedio_2021": 23.280851063829786,
+      "exceso_promedio_2022": 20.219346049046322,
+      "departamentos_comunes": 6
+    },
+    {
+      "mes_numero": 4,
+      "registros_2021": 11616,
+      "registros_2022": 9341,
+      "exceso_promedio_2021": 22.263343663911847,
+      "exceso_promedio_2022": 20.894550904614068,
+      "departamentos_comunes": 8
+    },
+    {
+      "mes_numero": 5,
+      "registros_2021": 6617,
+      "registros_2022": 8178,
+      "exceso_promedio_2021": 22.15263714674324,
+      "exceso_promedio_2022": 21.817314746881877,
+      "departamentos_comunes": 8
+    },
+    {
+      "mes_numero": 6,
+      "registros_2021": 5577,
+      "registros_2022": 9402,
+      "exceso_promedio_2021": 22.26304464766003,
+      "exceso_promedio_2022": 21.96553924696873,
+      "departamentos_comunes": 9
+    },
+    {
+      "mes_numero": 7,
+      "registros_2021": 12580,
+      "registros_2022": 10814,
+      "exceso_promedio_2021": 22.406597774244833,
+      "exceso_promedio_2022": 20.22489365637137,
+      "departamentos_comunes": 8
+    },
+    {
+      "mes_numero": 8,
+      "registros_2021": 5556,
+      "registros_2022": 8654,
+      "exceso_promedio_2021": 19.683585313174945,
+      "exceso_promedio_2022": 20.4136815345505,
+      "departamentos_comunes": 2
+    },
+    {
+      "mes_numero": 9,
+      "registros_2021": 4195,
+      "registros_2022": 4959,
+      "exceso_promedio_2021": 19.021215733015495,
+      "exceso_promedio_2022": 21.78503730590845,
+      "departamentos_comunes": 2
+    }
+  ],
+  "figures": [
+    "05_velocidad_volumen_2021_2022.png",
+    "06_velocidad_exceso_unidades_comunes.png"
+  ],
+  "method": "Only department and calendar-month cells observed in both years, excluding global boundary months with partial observed date range; sums divided by records. Does not equalize device locations, limits, hours, operating days or reporting completeness."
+}

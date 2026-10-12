@@ -1,0 +1,30 @@
+# Credenciales y configuración privada
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Datos de entrada y salidas de cada ejecución
+Datos_originales/*
+!Datos_originales/README.md
+!Datos_originales/.gitkeep
+Proyecto_SUTRAN/data_lake/**
+!Proyecto_SUTRAN/data_lake/.gitkeep
+Proyecto_SUTRAN/documentation/**
+!Proyecto_SUTRAN/documentation/.gitkeep
+Proyecto_SUTRAN/config/ultimo_*.json
+Proyecto_SUTRAN/config/ultima_*.json
+Proyecto_SUTRAN/config/prueba_escalabilidad.json
+*.log
+
+# Archivos temporales
+__pycache__/
+*.py[cod]
+*.crc
+.ipynb_checkpoints/
+.venv/
+.ruff_cache/
+.DS_Store
+Thumbs.db
+~$*

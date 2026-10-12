@@ -1,0 +1,80 @@
+{
+  "estado": "Pipeline, controles, análisis y modelo base ejecutados; ampliaciones del objetivo general pendientes",
+  "documento_base": "G5 - Proyecto Integrador Big Data y Analítica de Datos (1)222.docx",
+  "secciones_usuario": [
+    "3.1",
+    "3.2",
+    "3.3",
+    "3.4",
+    "3.5",
+    "3.6",
+    "3.7",
+    "3.8",
+    "4.1",
+    "4.2"
+  ],
+  "ruta": "A on-premise sobre Windows y Docker",
+  "zonas_logicas": {
+    "raw": "Originales inmutables y manifiesto de procedencia",
+    "standardized": "Fuentes tipadas y normalizadas en Parquet",
+    "curated": "Integracion por unidad vial y periodo, con cobertura y linaje",
+    "serving": "Salidas analiticas para consultas, modelo base y futura capa de consumo",
+    "quarantine": "Registros rechazados o sin correspondencia, con motivos"
+  },
+  "topologia_objetivo": {
+    "namenodes": 2,
+    "journalnodes": 3,
+    "zookeepers": 3,
+    "resourcemanagers": 2,
+    "datanodes": 3,
+    "nodemanagers": 3,
+    "hdfs_replication": 3,
+    "host_fisico": 1,
+    "alta_disponibilidad": "Objetivo de servicios logicos; no cubre fallo del host; pruebas pendientes"
+  },
+  "estado_fuentes": {
+    "accidentes": "Disponible 2020 a septiembre de 2021",
+    "velocidad": "2019-2021 para el modelo; 2022 para análisis descriptivo separado",
+    "flujo_peajes": "Disponible; pendiente catalogo georreferenciado",
+    "red_vial": "Disponible referencia 2018; validar vigencia, geometria y progresivas",
+    "pesaje": "Disponibles fotografias 2021 y 2022; no acreditan operacion mensual",
+    "meteorologia": "Pendiente de adquirir serie historica y validar cobertura SENAMHI",
+    "calendario": "Pendiente de documentar calendario oficial del periodo",
+    "emergencias_transitabilidad": "Pendiente; contexto operativo separado del entrenamiento si no coincide temporalmente",
+    "onsv_pdf": "Pendiente de incorporar y fichar; validacion externa"
+  },
+  "unidad_analitica": {
+    "clave_objetivo": [
+      "unidad_vial_id",
+      "mes"
+    ],
+    "estado": "La implementación actual agrega por departamento y mes; la unidad vial requiere correspondencias espaciales adicionales.",
+    "mes": "Primer dia del mes representado como fecha",
+    "clave_implementada": [
+      "departamento",
+      "mes"
+    ]
+  },
+  "versiones_laboratorio": {
+    "hadoop": "3.4.3",
+    "spark": "3.5.9",
+    "zookeeper": "3.8.7",
+    "hive_metastore": "3.1.3 (opcional)",
+    "java": "11",
+    "python": "3.11"
+  },
+  "modelo_base_implementado": {
+    "motor": "Spark MLlib",
+    "metodo": "Regresión lineal regularizada",
+    "objetivo": "Conteo publicado de accidentes por departamento en el mes siguiente",
+    "comparador": "Conteo del mes anterior",
+    "metricas": [
+      "MAE",
+      "RMSE"
+    ],
+    "entrenamiento": "Febrero de 2020 a junio de 2021 (mes objetivo)",
+    "prueba": "Julio a septiembre de 2021 (mes objetivo)",
+    "replicas_en_entrenamiento": false,
+    "estado": "Entrenado y evaluado; no se acredita ventaja consistente sobre el comparador"
+  }
+}

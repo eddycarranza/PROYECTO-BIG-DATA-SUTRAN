@@ -1,0 +1,392 @@
+{
+  "status": "success",
+  "run_id": "20261009T002525Z_931303fc",
+  "dataset_id": "20261009T002017Z_9fd86e62",
+  "application_id": "application_1791488189127_0016",
+  "model_path": "hdfs://sutran/sutran/modeling_42/training=20261009T002525Z_931303fc/modelo",
+  "dataset_plan": {
+    "status": "prepared",
+    "dataset_id": "20261009T002017Z_9fd86e62",
+    "application_id": "application_1791488189127_0015",
+    "pipeline_run": "20261008T203141Z_83442227",
+    "layout_id": "20261008T205415Z_7534de98",
+    "fit_executed": false,
+    "synthetic_data_used": false,
+    "accidents_2022_used": false,
+    "split_rule": {
+      "train_target_start": "2020-02-01",
+      "train_target_end": "2021-06-01",
+      "test_target_start": "2021-07-01",
+      "test_target_end": "2021-09-01"
+    },
+    "evaluation": "Pronóstico de un mes, con información del mes anterior en cada origen; no pronóstico simultáneo de tres meses.",
+    "publication_caveat": "La fecha del evento no acredita la fecha de disponibilidad pública. Backtest retrospectivo, sujeto a verificar latencia de publicación antes de uso operativo.",
+    "path": "hdfs://sutran/sutran/modeling_42/dataset=20261009T002017Z_9fd86e62",
+    "rows": 446,
+    "train_rows": 371,
+    "test_rows": 75,
+    "numeric_features": [
+      "accidentes_previos",
+      "fallecidos_previos",
+      "heridos_previos",
+      "exceso_previo_kmh",
+      "log_detecciones_previas",
+      "log_pasos_peajes_previos",
+      "cobertura_velocidad_previa",
+      "cobertura_peajes_previa",
+      "mes_seno",
+      "mes_coseno"
+    ],
+    "monthly": [
+      {
+        "particion": "train",
+        "mes_objetivo": "2020-02-01",
+        "unidades": 22,
+        "registros_accidentes": 500.0
+      },
+      {
+        "particion": "train",
+        "mes_objetivo": "2020-03-01",
+        "unidades": 22,
+        "registros_accidentes": 303.0
+      },
+      {
+        "particion": "train",
+        "mes_objetivo": "2020-04-01",
+        "unidades": 19,
+        "registros_accidentes": 109.0
+      },
+      {
+        "particion": "train",
+        "mes_objetivo": "2020-05-01",
+        "unidades": 19,
+        "registros_accidentes": 128.0
+      },
+      {
+        "particion": "train",
+        "mes_objetivo": "2020-06-01",
+        "unidades": 20,
+        "registros_accidentes": 213.0
+      },
+      {
+        "particion": "train",
+        "mes_objetivo": "2020-07-01",
+        "unidades": 20,
+        "registros_accidentes": 295.0
+      },
+      {
+        "particion": "train",
+        "mes_objetivo": "2020-08-01",
+        "unidades": 22,
+        "registros_accidentes": 299.0
+      },
+      {
+        "particion": "train",
+        "mes_objetivo": "2020-09-01",
+        "unidades": 21,
+        "registros_accidentes": 328.0
+      },
+      {
+        "particion": "train",
+        "mes_objetivo": "2020-10-01",
+        "unidades": 22,
+        "registros_accidentes": 386.0
+      },
+      {
+        "particion": "train",
+        "mes_objetivo": "2020-11-01",
+        "unidades": 22,
+        "registros_accidentes": 430.0
+      },
+      {
+        "particion": "train",
+        "mes_objetivo": "2020-12-01",
+        "unidades": 22,
+        "registros_accidentes": 482.0
+      },
+      {
+        "particion": "train",
+        "mes_objetivo": "2021-01-01",
+        "unidades": 23,
+        "registros_accidentes": 454.0
+      },
+      {
+        "particion": "train",
+        "mes_objetivo": "2021-02-01",
+        "unidades": 24,
+        "registros_accidentes": 403.0
+      },
+      {
+        "particion": "train",
+        "mes_objetivo": "2021-03-01",
+        "unidades": 23,
+        "registros_accidentes": 423.0
+      },
+      {
+        "particion": "train",
+        "mes_objetivo": "2021-04-01",
+        "unidades": 23,
+        "registros_accidentes": 384.0
+      },
+      {
+        "particion": "train",
+        "mes_objetivo": "2021-05-01",
+        "unidades": 23,
+        "registros_accidentes": 459.0
+      },
+      {
+        "particion": "train",
+        "mes_objetivo": "2021-06-01",
+        "unidades": 24,
+        "registros_accidentes": 468.0
+      },
+      {
+        "particion": "test",
+        "mes_objetivo": "2021-07-01",
+        "unidades": 25,
+        "registros_accidentes": 483.0
+      },
+      {
+        "particion": "test",
+        "mes_objetivo": "2021-08-01",
+        "unidades": 25,
+        "registros_accidentes": 562.0
+      },
+      {
+        "particion": "test",
+        "mes_objetivo": "2021-09-01",
+        "unidades": 25,
+        "registros_accidentes": 493.0
+      }
+    ],
+    "missing": {
+      "accidentes_previos": 0,
+      "fallecidos_previos": 0,
+      "heridos_previos": 0,
+      "exceso_previo_kmh": 341,
+      "log_detecciones_previas": 341,
+      "log_pasos_peajes_previos": 62,
+      "cobertura_velocidad_previa": 0,
+      "cobertura_peajes_previa": 0,
+      "mes_seno": 0,
+      "mes_coseno": 0
+    },
+    "selection": "Solo pares consecutivos con registro de accidentes observado en ambos meses. No se convierten meses ausentes en ceros; evaluación condicionada a esa cobertura.",
+    "model_plan": {
+      "algorithm": "Spark MLlib LinearRegression",
+      "regParam": 0.1,
+      "elasticNetParam": 0.0,
+      "maxIter": 100,
+      "imputation": "Mediana ajustada solo con train",
+      "categorical": "Departamento con StringIndexer y OneHotEncoder",
+      "prediction": "Máximo entre cero y salida de regresión; no se redondea",
+      "baseline": "Accidentes del mes inmediatamente anterior",
+      "primary_metric": "MAE",
+      "secondary_metric": "RMSE",
+      "ranking_k": 5
+    }
+  },
+  "baseline": "Conteo del mes anterior",
+  "metrics": {
+    "modelo": {
+      "n": 75,
+      "mae": 5.237865140138574,
+      "rmse": 7.105064178893722
+    },
+    "referencia": {
+      "n": 75,
+      "mae": 5.253333333333333,
+      "rmse": 6.918574034197124
+    }
+  },
+  "test_used_for_tuning": false,
+  "train_rows": 371,
+  "test_rows": 75,
+  "ranking": [
+    {
+      "mes_objetivo": "2021-07-01",
+      "metodo": "modelo",
+      "k": 5,
+      "departamentos": [
+        "LIMA",
+        "AREQUIPA",
+        "JUNIN",
+        "ANCASH",
+        "LAMBAYEQUE"
+      ],
+      "fraccion_registros_capturados": 0.4658385093167702,
+      "coincidencias_top_real": 4,
+      "total_registros_evaluados_mes": 483.0
+    },
+    {
+      "mes_objetivo": "2021-07-01",
+      "metodo": "referencia",
+      "k": 5,
+      "departamentos": [
+        "LIMA",
+        "AREQUIPA",
+        "ANCASH",
+        "JUNIN",
+        "CAJAMARCA"
+      ],
+      "fraccion_registros_capturados": 0.4782608695652174,
+      "coincidencias_top_real": 4,
+      "total_registros_evaluados_mes": 483.0
+    },
+    {
+      "mes_objetivo": "2021-08-01",
+      "metodo": "modelo",
+      "k": 5,
+      "departamentos": [
+        "LIMA",
+        "AREQUIPA",
+        "JUNIN",
+        "ANCASH",
+        "PUNO"
+      ],
+      "fraccion_registros_capturados": 0.5195729537366548,
+      "coincidencias_top_real": 5,
+      "total_registros_evaluados_mes": 562.0
+    },
+    {
+      "mes_objetivo": "2021-08-01",
+      "metodo": "referencia",
+      "k": 5,
+      "departamentos": [
+        "LIMA",
+        "AREQUIPA",
+        "JUNIN",
+        "ANCASH",
+        "PUNO"
+      ],
+      "fraccion_registros_capturados": 0.5195729537366548,
+      "coincidencias_top_real": 5,
+      "total_registros_evaluados_mes": 562.0
+    },
+    {
+      "mes_objetivo": "2021-09-01",
+      "metodo": "modelo",
+      "k": 5,
+      "departamentos": [
+        "LIMA",
+        "AREQUIPA",
+        "JUNIN",
+        "ANCASH",
+        "PUNO"
+      ],
+      "fraccion_registros_capturados": 0.49290060851926976,
+      "coincidencias_top_real": 4,
+      "total_registros_evaluados_mes": 493.0
+    },
+    {
+      "mes_objetivo": "2021-09-01",
+      "metodo": "referencia",
+      "k": 5,
+      "departamentos": [
+        "LIMA",
+        "AREQUIPA",
+        "JUNIN",
+        "ANCASH",
+        "PUNO"
+      ],
+      "fraccion_registros_capturados": 0.49290060851926976,
+      "coincidencias_top_real": 4,
+      "total_registros_evaluados_mes": 493.0
+    }
+  ],
+  "model_beats_baseline_mae": true,
+  "intercept": -10.095916697319693,
+  "coefficients": [
+    0.6118410442010345,
+    0.0549602619153722,
+    -0.08965173610610085,
+    0.2139630427417545,
+    1.0680959404109487,
+    0.3321698179098757,
+    2.672107146441491,
+    2.5662191048828604,
+    -1.5185877726218175,
+    1.4984826242875182,
+    -4.526423512002013,
+    3.4985100385446413,
+    -2.5653389451953,
+    6.846201914859448,
+    -3.286855868465841,
+    0.809173387564428,
+    0.6723223894091034,
+    -2.69164670595821,
+    -0.4094633052545955,
+    4.7703263648357614,
+    -4.335512813622956,
+    0.9107707632758882,
+    19.939682119424752,
+    -1.5644673850182385,
+    2.739068952104527,
+    -4.342813415575712,
+    -1.4049520986053177,
+    -3.3015558822389233,
+    -3.286811222027135,
+    -3.9797269663739714,
+    -1.3158284298186547,
+    -2.2943755021528274,
+    -5.560959660351451,
+    -2.519634247665645,
+    0.0
+  ],
+  "total_iterations": 0,
+  "training_objective_history": [
+    0.0
+  ],
+  "imputation_values": {
+    "accidentes_previos": 11.0,
+    "fallecidos_previos": 1.0,
+    "heridos_previos": 13.0,
+    "exceso_previo_kmh": 22.209876543209877,
+    "log_detecciones_previas": 6.651571873589727,
+    "log_pasos_peajes_previos": 11.545634639379934,
+    "cobertura_velocidad_previa": 0.0,
+    "cobertura_peajes_previa": 1.0,
+    "mes_seno": 0.49999999999999994,
+    "mes_coseno": -1.8369701987210297e-16
+  },
+  "department_labels": [
+    "AMAZONAS",
+    "ANCASH",
+    "APURIMAC",
+    "AREQUIPA",
+    "AYACUCHO",
+    "CAJAMARCA",
+    "CUSCO",
+    "HUANUCO",
+    "ICA",
+    "JUNIN",
+    "LA LIBERTAD",
+    "LAMBAYEQUE",
+    "LIMA",
+    "PIURA",
+    "PUNO",
+    "TACNA",
+    "UCAYALI",
+    "LORETO",
+    "MADRE DE DIOS",
+    "MOQUEGUA",
+    "SAN MARTIN",
+    "PASCO",
+    "TUMBES",
+    "HUANCAVELICA"
+  ],
+  "negative_predictions_clipped": 0,
+  "final_numeric_features": [
+    "accidentes_previos_imputado",
+    "fallecidos_previos_imputado",
+    "heridos_previos_imputado",
+    "exceso_previo_kmh_imputado",
+    "log_detecciones_previas_imputado",
+    "log_pasos_peajes_previos_imputado",
+    "cobertura_velocidad_previa_imputado",
+    "cobertura_peajes_previa_imputado",
+    "mes_seno_imputado",
+    "mes_coseno_imputado"
+  ],
+  "model_feature_count": 35
+}

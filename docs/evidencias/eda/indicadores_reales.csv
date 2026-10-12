@@ -1,0 +1,219 @@
+﻿departamento,mes,registros_accidentes,fallecidos_reportados,heridos_reportados,registros_duplicados_sospechosos,registros_sin_fallecidos_informados,registros_velocidad,exceso_promedio_kmh,pasos_vehiculares_peajes,peajes_con_datos,cobertura_velocidad,cobertura_peajes,nivel_geografico
+AMAZONAS,2021-01,10,0,9,0,0,,,63132,2,False,True,departamento
+AMAZONAS,2021-02,3,0,4,0,0,,,49375,2,False,True,departamento
+AMAZONAS,2021-03,5,0,5,0,0,,,55243,2,False,True,departamento
+AMAZONAS,2021-04,2,0,4,0,0,,,48663,2,False,True,departamento
+AMAZONAS,2021-05,6,1,7,0,0,,,57963,2,False,True,departamento
+AMAZONAS,2021-06,11,0,12,0,0,,,57659,2,False,True,departamento
+AMAZONAS,2021-07,7,0,9,0,0,,,66169,2,False,True,departamento
+AMAZONAS,2021-08,20,8,31,0,0,,,70179,2,False,True,departamento
+AMAZONAS,2021-09,10,2,8,0,0,,,62254,2,False,True,departamento
+ANCASH,2021-01,30,0,49,0,0,146,25.602739726027398,438164,3,True,True,departamento
+ANCASH,2021-02,27,1,18,2,0,43,28.488372093023255,314421,3,True,True,departamento
+ANCASH,2021-03,25,2,30,0,0,667,27.221889055472264,399107,3,True,True,departamento
+ANCASH,2021-04,29,24,36,0,0,773,26.451487710219922,370973,3,True,True,departamento
+ANCASH,2021-05,41,4,49,2,0,431,28.16473317865429,408722,3,True,True,departamento
+ANCASH,2021-06,36,3,52,0,0,130,22.70769230769231,399065,3,True,True,departamento
+ANCASH,2021-07,30,6,61,0,0,1419,26.76250880902044,448606,3,True,True,departamento
+ANCASH,2021-08,40,6,43,0,0,,,469956,3,False,True,departamento
+ANCASH,2021-09,46,3,60,0,0,295,26.55593220338983,428887,3,True,True,departamento
+APURIMAC,2021-01,14,1,16,0,0,,,64192,2,False,True,departamento
+APURIMAC,2021-02,10,0,20,2,0,,,43538,2,False,True,departamento
+APURIMAC,2021-03,13,0,14,0,0,,,58297,2,False,True,departamento
+APURIMAC,2021-04,12,1,16,0,0,,,58001,2,False,True,departamento
+APURIMAC,2021-05,10,2,12,0,0,,,64084,2,False,True,departamento
+APURIMAC,2021-06,10,0,8,0,0,,,64615,2,False,True,departamento
+APURIMAC,2021-07,18,2,35,0,0,,,70895,2,False,True,departamento
+APURIMAC,2021-08,14,17,25,0,0,,,74754,2,False,True,departamento
+APURIMAC,2021-09,9,1,28,0,0,,,68387,2,False,True,departamento
+AREQUIPA,2021-01,48,7,45,0,0,891,22.209876543209877,692081,9,True,True,departamento
+AREQUIPA,2021-02,33,4,32,2,0,669,21.902840059790734,528184,9,True,True,departamento
+AREQUIPA,2021-03,41,5,48,0,0,361,21.088642659279778,627163,9,True,True,departamento
+AREQUIPA,2021-04,45,4,25,2,0,90,17.844444444444445,568005,9,True,True,departamento
+AREQUIPA,2021-05,48,12,39,0,0,256,21.93359375,598189,9,True,True,departamento
+AREQUIPA,2021-06,47,6,46,0,0,127,21.173228346456693,528198,9,True,True,departamento
+AREQUIPA,2021-07,51,5,99,0,0,189,21.06878306878307,608821,9,True,True,departamento
+AREQUIPA,2021-08,60,8,73,2,0,,,718289,9,False,True,departamento
+AREQUIPA,2021-09,49,5,61,0,0,,,684225,9,False,True,departamento
+AYACUCHO,2021-01,6,0,9,0,0,,,73367,3,False,True,departamento
+AYACUCHO,2021-02,13,1,10,0,0,,,50130,3,False,True,departamento
+AYACUCHO,2021-03,11,0,22,0,0,,,65557,3,False,True,departamento
+AYACUCHO,2021-04,9,11,26,0,0,,,65859,3,False,True,departamento
+AYACUCHO,2021-05,8,0,7,0,0,,,75074,3,False,True,departamento
+AYACUCHO,2021-06,9,23,31,0,0,,,72960,3,False,True,departamento
+AYACUCHO,2021-07,8,0,8,0,0,,,84859,3,False,True,departamento
+AYACUCHO,2021-08,5,2,6,0,0,,,87020,3,False,True,departamento
+AYACUCHO,2021-09,13,2,28,0,0,,,78378,3,False,True,departamento
+CAJAMARCA,2021-01,24,2,27,0,0,,,46393,1,False,True,departamento
+CAJAMARCA,2021-02,28,3,23,4,0,,,39175,1,False,True,departamento
+CAJAMARCA,2021-03,18,2,26,0,0,,,41114,1,False,True,departamento
+CAJAMARCA,2021-04,9,1,5,0,0,,,38107,1,False,True,departamento
+CAJAMARCA,2021-05,21,2,21,0,0,,,42583,1,False,True,departamento
+CAJAMARCA,2021-06,28,7,32,0,0,,,41959,1,False,True,departamento
+CAJAMARCA,2021-07,21,2,32,0,0,,,47222,1,False,True,departamento
+CAJAMARCA,2021-08,23,1,26,0,0,,,51644,1,False,True,departamento
+CAJAMARCA,2021-09,12,0,16,0,0,,,47853,1,False,True,departamento
+CALLAO,2021-06,1,1,0,0,0,,,,,False,False,departamento
+CALLAO,2021-07,2,0,2,0,0,,,,,False,False,departamento
+CALLAO,2021-08,1,0,3,0,0,,,,,False,False,departamento
+CALLAO,2021-09,2,0,3,0,0,,,,,False,False,departamento
+CUSCO,2021-01,30,4,49,2,0,,,160183,4,False,True,departamento
+CUSCO,2021-02,17,2,33,0,0,,,114366,4,False,True,departamento
+CUSCO,2021-03,24,6,36,0,0,,,144577,4,False,True,departamento
+CUSCO,2021-04,14,2,12,0,0,,,140030,4,False,True,departamento
+CUSCO,2021-05,18,5,17,0,0,,,157856,4,False,True,departamento
+CUSCO,2021-06,19,3,59,0,0,,,157098,4,False,True,departamento
+CUSCO,2021-07,21,2,13,0,0,,,171395,4,False,True,departamento
+CUSCO,2021-08,15,1,19,0,0,,,186967,4,False,True,departamento
+CUSCO,2021-09,16,1,20,0,0,,,177123,4,False,True,departamento
+HUANCAVELICA,2021-01,6,0,10,0,0,,,,,False,False,departamento
+HUANCAVELICA,2021-02,3,0,8,0,0,,,,,False,False,departamento
+HUANCAVELICA,2021-05,2,3,1,0,0,,,,,False,False,departamento
+HUANCAVELICA,2021-06,6,3,4,0,0,,,,,False,False,departamento
+HUANCAVELICA,2021-07,3,0,6,0,0,,,,,False,False,departamento
+HUANCAVELICA,2021-08,3,0,4,0,0,,,,,False,False,departamento
+HUANCAVELICA,2021-09,4,0,4,0,0,,,,,False,False,departamento
+HUANUCO,2021-01,9,1,7,0,0,,,52162,1,False,True,departamento
+HUANUCO,2021-02,5,1,3,0,0,,,35159,1,False,True,departamento
+HUANUCO,2021-03,7,2,6,0,0,,,50346,1,False,True,departamento
+HUANUCO,2021-04,9,2,9,0,0,,,48846,1,False,True,departamento
+HUANUCO,2021-05,10,0,10,0,0,,,53940,1,False,True,departamento
+HUANUCO,2021-06,9,1,9,0,0,,,53414,1,False,True,departamento
+HUANUCO,2021-07,9,3,10,0,0,,,57744,1,False,True,departamento
+HUANUCO,2021-08,12,0,5,0,0,,,59821,1,False,True,departamento
+HUANUCO,2021-09,7,1,6,0,0,,,54742,1,False,True,departamento
+ICA,2021-01,21,2,43,2,0,220,16.822727272727274,850547,5,True,True,departamento
+ICA,2021-02,25,3,25,2,0,111,18.0,569688,5,True,True,departamento
+ICA,2021-03,18,5,18,0,0,405,20.437037037037037,756540,5,True,True,departamento
+ICA,2021-04,21,6,19,0,0,471,21.180467091295117,718472,5,True,True,departamento
+ICA,2021-05,23,2,35,0,0,400,19.6275,793781,5,True,True,departamento
+ICA,2021-06,16,1,21,0,0,231,19.96969696969697,756842,5,True,True,departamento
+ICA,2021-07,19,2,21,0,0,28,15.892857142857142,897237,5,True,True,departamento
+ICA,2021-08,15,1,20,0,0,,,951665,5,False,True,departamento
+ICA,2021-09,22,5,40,0,0,14,19.0,872175,5,True,True,departamento
+JUNIN,2021-01,37,3,62,0,0,894,29.079418344519016,321407,4,True,True,departamento
+JUNIN,2021-02,33,1,28,4,0,443,28.455981941309254,211938,4,True,True,departamento
+JUNIN,2021-03,34,4,36,0,0,715,27.65874125874126,294151,4,True,True,departamento
+JUNIN,2021-04,39,12,52,0,0,650,28.38,301147,4,True,True,departamento
+JUNIN,2021-05,37,7,72,0,0,420,28.676190476190477,341357,4,True,True,departamento
+JUNIN,2021-06,32,2,36,0,0,698,28.8810888252149,328999,4,True,True,departamento
+JUNIN,2021-07,31,8,31,0,0,740,27.491891891891893,377026,4,True,True,departamento
+JUNIN,2021-08,45,9,75,0,0,,,400695,4,False,True,departamento
+JUNIN,2021-09,35,4,48,0,0,,,343022,4,False,True,departamento
+LA LIBERTAD,2021-01,12,2,27,0,0,3511,26.75220734833381,1040729,5,True,True,departamento
+LA LIBERTAD,2021-02,17,7,16,2,0,2809,25.71804912780349,842708,5,True,True,departamento
+LA LIBERTAD,2021-03,21,8,14,0,0,3534,26.093095642331637,945872,5,True,True,departamento
+LA LIBERTAD,2021-04,25,2,27,0,0,3243,25.04101140918902,871914,5,True,True,departamento
+LA LIBERTAD,2021-05,23,9,31,0,0,1733,24.93594922100404,992722,5,True,True,departamento
+LA LIBERTAD,2021-06,17,25,21,0,0,1543,22.335709656513284,977141,5,True,True,departamento
+LA LIBERTAD,2021-07,21,3,38,0,0,2825,21.351858407079646,1112902,5,True,True,departamento
+LA LIBERTAD,2021-08,19,8,40,0,0,,,1165240,5,False,True,departamento
+LA LIBERTAD,2021-09,27,6,22,0,0,,,1079922,5,False,True,departamento
+LAMBAYEQUE,2021-01,22,1,27,2,0,32,14.90625,312878,5,True,True,departamento
+LAMBAYEQUE,2021-02,28,0,46,4,0,226,14.814159292035399,293150,5,True,True,departamento
+LAMBAYEQUE,2021-03,23,6,48,0,0,822,19.59610705596107,313308,5,True,True,departamento
+LAMBAYEQUE,2021-04,17,0,32,0,0,485,19.27422680412371,289328,5,True,True,departamento
+LAMBAYEQUE,2021-05,22,5,25,0,0,341,18.343108504398828,323741,5,True,True,departamento
+LAMBAYEQUE,2021-06,26,3,26,0,0,577,19.327556325823224,325615,5,True,True,departamento
+LAMBAYEQUE,2021-07,15,2,17,0,0,1027,20.396299902629018,364138,5,True,True,departamento
+LAMBAYEQUE,2021-08,18,3,21,0,0,596,18.870805369127517,377024,5,True,True,departamento
+LAMBAYEQUE,2021-09,18,4,97,2,0,361,18.9196675900277,341271,5,True,True,departamento
+LIMA,2021-01,83,9,97,2,0,6328,23.352402022756007,2231765,9,True,True,departamento
+LIMA,2021-02,72,2,66,8,0,4735,22.53854276663147,1421899,9,True,True,departamento
+LIMA,2021-03,80,14,97,0,0,4856,21.47837726523888,2077272,9,True,True,departamento
+LIMA,2021-04,68,13,63,0,0,5451,20.890662263804806,1828505,9,True,True,departamento
+LIMA,2021-05,79,4,103,0,0,2307,19.96228868660598,2046182,9,True,True,departamento
+LIMA,2021-06,90,11,97,0,0,1895,21.63641160949868,1959408,9,True,True,departamento
+LIMA,2021-07,98,7,108,0,0,6220,21.837459807073955,2344767,9,True,True,departamento
+LIMA,2021-08,108,44,177,0,0,4960,19.78125,2422964,9,True,True,departamento
+LIMA,2021-09,86,8,109,0,0,3834,19.03077725612937,2157876,9,True,True,departamento
+LORETO,2021-01,5,0,6,0,0,,,,,False,False,departamento
+LORETO,2021-02,7,1,10,0,0,,,,,False,False,departamento
+LORETO,2021-03,7,0,8,0,0,,,,,False,False,departamento
+LORETO,2021-04,2,0,2,0,0,,,,,False,False,departamento
+LORETO,2021-05,3,1,2,0,0,,,,,False,False,departamento
+LORETO,2021-06,6,1,5,0,0,,,,,False,False,departamento
+LORETO,2021-07,6,0,12,0,0,,,,,False,False,departamento
+LORETO,2021-08,3,0,5,0,0,,,,,False,False,departamento
+LORETO,2021-09,1,0,2,0,0,,,,,False,False,departamento
+MADRE DE DIOS,2021-01,11,1,24,0,0,,,80679,3,False,True,departamento
+MADRE DE DIOS,2021-02,12,1,9,2,0,,,71979,3,False,True,departamento
+MADRE DE DIOS,2021-03,9,1,12,0,0,,,82500,3,False,True,departamento
+MADRE DE DIOS,2021-04,7,0,13,0,0,,,76157,3,False,True,departamento
+MADRE DE DIOS,2021-05,10,0,11,0,0,,,88617,3,False,True,departamento
+MADRE DE DIOS,2021-06,12,4,8,2,0,,,91145,3,False,True,departamento
+MADRE DE DIOS,2021-07,14,2,18,0,0,,,98798,3,False,True,departamento
+MADRE DE DIOS,2021-08,18,2,21,0,0,,,102238,3,False,True,departamento
+MADRE DE DIOS,2021-09,16,1,10,0,0,,,96208,3,False,True,departamento
+MOQUEGUA,2021-01,13,0,11,0,0,147,16.53061224489796,109123,3,True,True,departamento
+MOQUEGUA,2021-02,4,0,5,0,0,93,16.49462365591398,86978,3,True,True,departamento
+MOQUEGUA,2021-03,12,0,9,0,0,158,17.867088607594937,108374,3,True,True,departamento
+MOQUEGUA,2021-04,10,0,8,0,0,202,17.39108910891089,109799,3,True,True,departamento
+MOQUEGUA,2021-05,7,0,6,0,0,57,16.912280701754387,115359,3,True,True,departamento
+MOQUEGUA,2021-06,8,0,8,0,0,50,15.16,111587,3,True,True,departamento
+MOQUEGUA,2021-07,14,0,19,0,0,329,17.227963525835865,121212,3,True,True,departamento
+MOQUEGUA,2021-08,13,0,20,0,0,,,130770,3,False,True,departamento
+MOQUEGUA,2021-09,21,1,20,0,0,,,122501,3,False,True,departamento
+PASCO,2021-01,6,5,36,0,0,,,,,False,False,departamento
+PASCO,2021-02,2,0,2,0,0,,,,,False,False,departamento
+PASCO,2021-03,11,1,16,0,0,,,,,False,False,departamento
+PASCO,2021-04,3,0,3,0,0,,,,,False,False,departamento
+PASCO,2021-05,5,0,7,0,0,,,,,False,False,departamento
+PASCO,2021-06,8,0,4,0,0,,,,,False,False,departamento
+PASCO,2021-07,8,0,8,0,0,,,,,False,False,departamento
+PASCO,2021-08,8,1,15,2,0,,,,,False,False,departamento
+PASCO,2021-09,9,1,9,0,0,,,,,False,False,departamento
+PIURA,2021-01,11,3,16,0,0,2218,19.590171325518487,644832,7,True,True,departamento
+PIURA,2021-02,12,3,15,0,0,944,20.451271186440678,597326,7,True,True,departamento
+PIURA,2021-03,17,9,13,0,0,1589,18.623662680931403,636462,7,True,True,departamento
+PIURA,2021-04,9,1,14,0,0,1057,19.623462630085147,542763,7,True,True,departamento
+PIURA,2021-05,15,3,16,0,0,869,19.42922899884925,617894,7,True,True,departamento
+PIURA,2021-06,20,3,24,0,0,239,19.347280334728033,617593,7,True,True,departamento
+PIURA,2021-07,20,4,24,2,0,219,19.14611872146119,704874,7,True,True,departamento
+PIURA,2021-08,34,15,36,0,0,,,719385,7,False,True,departamento
+PIURA,2021-09,17,4,19,0,0,,,676314,7,False,True,departamento
+PUNO,2021-01,23,7,26,2,0,357,21.089635854341736,497946,9,True,True,departamento
+PUNO,2021-02,23,3,18,2,0,252,21.615079365079364,380072,9,True,True,departamento
+PUNO,2021-03,25,5,46,0,0,243,22.724279835390945,476824,9,True,True,departamento
+PUNO,2021-04,26,6,20,0,0,169,20.171597633136095,467693,9,True,True,departamento
+PUNO,2021-05,29,7,33,0,0,116,18.482758620689655,501447,9,True,True,departamento
+PUNO,2021-06,22,3,22,0,0,137,18.2992700729927,485195,9,True,True,departamento
+PUNO,2021-07,30,4,29,0,0,102,17.862745098039216,523710,9,True,True,departamento
+PUNO,2021-08,39,12,51,0,0,,,581789,9,False,True,departamento
+PUNO,2021-09,27,4,27,0,0,,,527340,9,False,True,departamento
+SAN MARTIN,2021-01,15,4,14,0,0,,,84770,3,False,True,departamento
+SAN MARTIN,2021-02,16,0,16,0,0,,,68740,3,False,True,departamento
+SAN MARTIN,2021-03,10,1,11,0,0,,,74410,3,False,True,departamento
+SAN MARTIN,2021-04,20,4,29,0,0,,,65379,3,False,True,departamento
+SAN MARTIN,2021-05,15,1,22,0,0,,,77010,3,False,True,departamento
+SAN MARTIN,2021-06,17,1,24,0,0,,,76516,3,False,True,departamento
+SAN MARTIN,2021-07,21,1,24,0,0,,,87836,3,False,True,departamento
+SAN MARTIN,2021-08,27,5,89,0,0,,,92013,3,False,True,departamento
+SAN MARTIN,2021-09,23,3,36,0,0,,,83719,3,False,True,departamento
+TACNA,2021-01,8,0,7,0,0,,,69609,2,False,True,departamento
+TACNA,2021-02,7,1,8,0,0,,,48999,2,False,True,departamento
+TACNA,2021-03,3,0,7,0,0,,,66123,2,False,True,departamento
+TACNA,2021-04,3,0,2,0,0,,,66426,2,False,True,departamento
+TACNA,2021-05,9,0,10,0,0,,,72511,2,False,True,departamento
+TACNA,2021-06,5,3,6,0,0,,,69377,2,False,True,departamento
+TACNA,2021-07,11,8,30,0,0,,,78337,2,False,True,departamento
+TACNA,2021-08,7,0,22,0,0,,,82913,2,False,True,departamento
+TACNA,2021-09,4,2,4,0,0,,,79292,2,False,True,departamento
+TUMBES,2021-01,1,0,2,0,0,,,27778,1,False,True,departamento
+TUMBES,2021-02,3,4,4,0,0,,,22452,1,False,True,departamento
+TUMBES,2021-03,2,0,4,0,0,,,25396,1,False,True,departamento
+TUMBES,2021-04,1,0,2,0,0,,,21662,1,False,True,departamento
+TUMBES,2021-05,1,0,1,0,0,,,24312,1,False,True,departamento
+TUMBES,2021-06,1,0,4,0,0,,,23930,1,False,True,departamento
+TUMBES,2021-07,2,0,1,0,0,,,30773,1,False,True,departamento
+TUMBES,2021-08,3,0,3,0,0,,,31562,1,False,True,departamento
+TUMBES,2021-09,3,1,7,0,0,,,29743,1,False,True,departamento
+UCAYALI,2021-01,15,6,30,0,0,,,,,False,False,departamento
+UCAYALI,2021-02,3,1,2,0,0,,,,,False,False,departamento
+UCAYALI,2021-03,7,2,13,0,0,,,,,False,False,departamento
+UCAYALI,2021-04,4,0,3,0,0,,,,,False,False,departamento
+UCAYALI,2021-05,19,0,17,0,0,,,,,False,False,departamento
+UCAYALI,2021-06,13,1,16,0,0,,,,,False,False,departamento
+UCAYALI,2021-07,3,0,4,0,0,,,,,False,False,departamento
+UCAYALI,2021-08,12,1,13,0,0,,,,,False,False,departamento
+UCAYALI,2021-09,16,0,21,0,0,,,,,False,False,departamento

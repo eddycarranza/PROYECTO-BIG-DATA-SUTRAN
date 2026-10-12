@@ -1,0 +1,182 @@
+{
+  "status": "prepared",
+  "dataset_id": "20261009T002017Z_9fd86e62",
+  "application_id": "application_1791488189127_0015",
+  "pipeline_run": "20261008T203141Z_83442227",
+  "layout_id": "20261008T205415Z_7534de98",
+  "fit_executed": false,
+  "synthetic_data_used": false,
+  "accidents_2022_used": false,
+  "split_rule": {
+    "train_target_start": "2020-02-01",
+    "train_target_end": "2021-06-01",
+    "test_target_start": "2021-07-01",
+    "test_target_end": "2021-09-01"
+  },
+  "evaluation": "Pronóstico de un mes, con información del mes anterior en cada origen; no pronóstico simultáneo de tres meses.",
+  "publication_caveat": "La fecha del evento no acredita la fecha de disponibilidad pública. Backtest retrospectivo, sujeto a verificar latencia de publicación antes de uso operativo.",
+  "path": "hdfs://sutran/sutran/modeling_42/dataset=20261009T002017Z_9fd86e62",
+  "rows": 446,
+  "train_rows": 371,
+  "test_rows": 75,
+  "numeric_features": [
+    "accidentes_previos",
+    "fallecidos_previos",
+    "heridos_previos",
+    "exceso_previo_kmh",
+    "log_detecciones_previas",
+    "log_pasos_peajes_previos",
+    "cobertura_velocidad_previa",
+    "cobertura_peajes_previa",
+    "mes_seno",
+    "mes_coseno"
+  ],
+  "monthly": [
+    {
+      "particion": "train",
+      "mes_objetivo": "2020-02-01",
+      "unidades": 22,
+      "registros_accidentes": 500.0
+    },
+    {
+      "particion": "train",
+      "mes_objetivo": "2020-03-01",
+      "unidades": 22,
+      "registros_accidentes": 303.0
+    },
+    {
+      "particion": "train",
+      "mes_objetivo": "2020-04-01",
+      "unidades": 19,
+      "registros_accidentes": 109.0
+    },
+    {
+      "particion": "train",
+      "mes_objetivo": "2020-05-01",
+      "unidades": 19,
+      "registros_accidentes": 128.0
+    },
+    {
+      "particion": "train",
+      "mes_objetivo": "2020-06-01",
+      "unidades": 20,
+      "registros_accidentes": 213.0
+    },
+    {
+      "particion": "train",
+      "mes_objetivo": "2020-07-01",
+      "unidades": 20,
+      "registros_accidentes": 295.0
+    },
+    {
+      "particion": "train",
+      "mes_objetivo": "2020-08-01",
+      "unidades": 22,
+      "registros_accidentes": 299.0
+    },
+    {
+      "particion": "train",
+      "mes_objetivo": "2020-09-01",
+      "unidades": 21,
+      "registros_accidentes": 328.0
+    },
+    {
+      "particion": "train",
+      "mes_objetivo": "2020-10-01",
+      "unidades": 22,
+      "registros_accidentes": 386.0
+    },
+    {
+      "particion": "train",
+      "mes_objetivo": "2020-11-01",
+      "unidades": 22,
+      "registros_accidentes": 430.0
+    },
+    {
+      "particion": "train",
+      "mes_objetivo": "2020-12-01",
+      "unidades": 22,
+      "registros_accidentes": 482.0
+    },
+    {
+      "particion": "train",
+      "mes_objetivo": "2021-01-01",
+      "unidades": 23,
+      "registros_accidentes": 454.0
+    },
+    {
+      "particion": "train",
+      "mes_objetivo": "2021-02-01",
+      "unidades": 24,
+      "registros_accidentes": 403.0
+    },
+    {
+      "particion": "train",
+      "mes_objetivo": "2021-03-01",
+      "unidades": 23,
+      "registros_accidentes": 423.0
+    },
+    {
+      "particion": "train",
+      "mes_objetivo": "2021-04-01",
+      "unidades": 23,
+      "registros_accidentes": 384.0
+    },
+    {
+      "particion": "train",
+      "mes_objetivo": "2021-05-01",
+      "unidades": 23,
+      "registros_accidentes": 459.0
+    },
+    {
+      "particion": "train",
+      "mes_objetivo": "2021-06-01",
+      "unidades": 24,
+      "registros_accidentes": 468.0
+    },
+    {
+      "particion": "test",
+      "mes_objetivo": "2021-07-01",
+      "unidades": 25,
+      "registros_accidentes": 483.0
+    },
+    {
+      "particion": "test",
+      "mes_objetivo": "2021-08-01",
+      "unidades": 25,
+      "registros_accidentes": 562.0
+    },
+    {
+      "particion": "test",
+      "mes_objetivo": "2021-09-01",
+      "unidades": 25,
+      "registros_accidentes": 493.0
+    }
+  ],
+  "missing": {
+    "accidentes_previos": 0,
+    "fallecidos_previos": 0,
+    "heridos_previos": 0,
+    "exceso_previo_kmh": 341,
+    "log_detecciones_previas": 341,
+    "log_pasos_peajes_previos": 62,
+    "cobertura_velocidad_previa": 0,
+    "cobertura_peajes_previa": 0,
+    "mes_seno": 0,
+    "mes_coseno": 0
+  },
+  "selection": "Solo pares consecutivos con registro de accidentes observado en ambos meses. No se convierten meses ausentes en ceros; evaluación condicionada a esa cobertura.",
+  "model_plan": {
+    "algorithm": "Spark MLlib LinearRegression",
+    "regParam": 0.1,
+    "elasticNetParam": 0.0,
+    "maxIter": 100,
+    "imputation": "Mediana ajustada solo con train",
+    "categorical": "Departamento con StringIndexer y OneHotEncoder",
+    "prediction": "Máximo entre cero y salida de regresión; no se redondea",
+    "baseline": "Accidentes del mes inmediatamente anterior",
+    "primary_metric": "MAE",
+    "secondary_metric": "RMSE",
+    "ranking_k": 5
+  }
+}

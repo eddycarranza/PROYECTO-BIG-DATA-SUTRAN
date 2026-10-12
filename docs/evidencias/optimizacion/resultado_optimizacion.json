@@ -1,0 +1,248 @@
+{
+  "status": "success",
+  "run_id": "20261008T211235Z_615186fd",
+  "application_id": "application_1791488189127_0007",
+  "pipeline_run": "20261008T203141Z_83442227",
+  "storage_layout": "20261008T205415Z_7534de98",
+  "paths": {
+    "antes": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/velocidad_2019_2021",
+    "despues": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/velocidad_2019_2021"
+  },
+  "method": "One warm-up per variant/year, five paired repetitions; alternating order; no Spark cache; wall time includes read/schema, query planning and collect. OS/HDFS caches not cleared.",
+  "spark_version": "3.5.9",
+  "spark_config": {
+    "spark.executor.instances": "2",
+    "spark.executor.cores": "1",
+    "spark.executor.memory": "512m",
+    "spark.sql.shuffle.partitions": "6",
+    "spark.sql.adaptive.enabled": "true"
+  },
+  "measurements": [
+    {
+      "year": 2019,
+      "repetition": 1,
+      "position": 1,
+      "variant": "antes",
+      "seconds": 0.8251018329992803,
+      "rows_aggregated": 4867,
+      "departments": 6,
+      "equivalent": true
+    },
+    {
+      "year": 2019,
+      "repetition": 1,
+      "position": 2,
+      "variant": "despues",
+      "seconds": 0.6906482550002693,
+      "rows_aggregated": 4867,
+      "departments": 6,
+      "equivalent": true
+    },
+    {
+      "year": 2019,
+      "repetition": 2,
+      "position": 1,
+      "variant": "despues",
+      "seconds": 0.5100431949995254,
+      "rows_aggregated": 4867,
+      "departments": 6,
+      "equivalent": true
+    },
+    {
+      "year": 2019,
+      "repetition": 2,
+      "position": 2,
+      "variant": "antes",
+      "seconds": 0.5138175179999962,
+      "rows_aggregated": 4867,
+      "departments": 6,
+      "equivalent": true
+    },
+    {
+      "year": 2019,
+      "repetition": 3,
+      "position": 1,
+      "variant": "antes",
+      "seconds": 0.5166384359999938,
+      "rows_aggregated": 4867,
+      "departments": 6,
+      "equivalent": true
+    },
+    {
+      "year": 2019,
+      "repetition": 3,
+      "position": 2,
+      "variant": "despues",
+      "seconds": 0.5261816459997135,
+      "rows_aggregated": 4867,
+      "departments": 6,
+      "equivalent": true
+    },
+    {
+      "year": 2019,
+      "repetition": 4,
+      "position": 1,
+      "variant": "despues",
+      "seconds": 0.4332735230000253,
+      "rows_aggregated": 4867,
+      "departments": 6,
+      "equivalent": true
+    },
+    {
+      "year": 2019,
+      "repetition": 4,
+      "position": 2,
+      "variant": "antes",
+      "seconds": 0.5634164949997285,
+      "rows_aggregated": 4867,
+      "departments": 6,
+      "equivalent": true
+    },
+    {
+      "year": 2019,
+      "repetition": 5,
+      "position": 1,
+      "variant": "antes",
+      "seconds": 0.41698162000011507,
+      "rows_aggregated": 4867,
+      "departments": 6,
+      "equivalent": true
+    },
+    {
+      "year": 2019,
+      "repetition": 5,
+      "position": 2,
+      "variant": "despues",
+      "seconds": 0.4434863599999517,
+      "rows_aggregated": 4867,
+      "departments": 6,
+      "equivalent": true
+    },
+    {
+      "year": 2021,
+      "repetition": 1,
+      "position": 1,
+      "variant": "antes",
+      "seconds": 0.4824168869999994,
+      "rows_aggregated": 87318,
+      "departments": 10,
+      "equivalent": true
+    },
+    {
+      "year": 2021,
+      "repetition": 1,
+      "position": 2,
+      "variant": "despues",
+      "seconds": 0.44057004599926586,
+      "rows_aggregated": 87318,
+      "departments": 10,
+      "equivalent": true
+    },
+    {
+      "year": 2021,
+      "repetition": 2,
+      "position": 1,
+      "variant": "despues",
+      "seconds": 0.389713283000674,
+      "rows_aggregated": 87318,
+      "departments": 10,
+      "equivalent": true
+    },
+    {
+      "year": 2021,
+      "repetition": 2,
+      "position": 2,
+      "variant": "antes",
+      "seconds": 0.41528538199963805,
+      "rows_aggregated": 87318,
+      "departments": 10,
+      "equivalent": true
+    },
+    {
+      "year": 2021,
+      "repetition": 3,
+      "position": 1,
+      "variant": "antes",
+      "seconds": 0.37821199799964234,
+      "rows_aggregated": 87318,
+      "departments": 10,
+      "equivalent": true
+    },
+    {
+      "year": 2021,
+      "repetition": 3,
+      "position": 2,
+      "variant": "despues",
+      "seconds": 0.4078892640000049,
+      "rows_aggregated": 87318,
+      "departments": 10,
+      "equivalent": true
+    },
+    {
+      "year": 2021,
+      "repetition": 4,
+      "position": 1,
+      "variant": "despues",
+      "seconds": 0.3520544700004393,
+      "rows_aggregated": 87318,
+      "departments": 10,
+      "equivalent": true
+    },
+    {
+      "year": 2021,
+      "repetition": 4,
+      "position": 2,
+      "variant": "antes",
+      "seconds": 0.4205142850005359,
+      "rows_aggregated": 87318,
+      "departments": 10,
+      "equivalent": true
+    },
+    {
+      "year": 2021,
+      "repetition": 5,
+      "position": 1,
+      "variant": "antes",
+      "seconds": 0.48176195599990024,
+      "rows_aggregated": 87318,
+      "departments": 10,
+      "equivalent": true
+    },
+    {
+      "year": 2021,
+      "repetition": 5,
+      "position": 2,
+      "variant": "despues",
+      "seconds": 0.4079776510006923,
+      "rows_aggregated": 87318,
+      "departments": 10,
+      "equivalent": true
+    }
+  ],
+  "summaries": [
+    {
+      "year": 2019,
+      "before_median_seconds": 0.5166384359999938,
+      "after_median_seconds": 0.5100431949995254,
+      "before_min_seconds": 0.41698162000011507,
+      "before_max_seconds": 0.8251018329992803,
+      "after_min_seconds": 0.4332735230000253,
+      "after_max_seconds": 0.6906482550002693,
+      "time_reduction_percent": 1.2765680098312422,
+      "speedup": 1.0129307499151607,
+      "rows": 4867
+    },
+    {
+      "year": 2021,
+      "before_median_seconds": 0.4205142850005359,
+      "after_median_seconds": 0.4078892640000049,
+      "before_min_seconds": 0.37821199799964234,
+      "before_max_seconds": 0.4824168869999994,
+      "after_min_seconds": 0.3520544700004393,
+      "after_max_seconds": 0.44057004599926586,
+      "time_reduction_percent": 3.002281123580591,
+      "speedup": 1.0309520796814373,
+      "rows": 87318
+    }
+  ]
+}

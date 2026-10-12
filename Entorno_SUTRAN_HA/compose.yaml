@@ -1,0 +1,380 @@
+name: ${COMPOSE_PROJECT_NAME:-sutran-ha}
+services:
+  zk1:
+    image: zookeeper:3.8.7
+    hostname: zk1
+    environment:
+      ZOO_MY_ID: '1'
+      ZOO_SERVERS: server.1=zk1:2888:3888;2181 server.2=zk2:2888:3888;2181 server.3=zk3:2888:3888;2181
+      JVMFLAGS: -Xms64m -Xmx128m
+    volumes:
+    - zk1:/data
+    - zk1_log:/datalog
+    mem_limit: 256m
+    networks:
+    - bigdata
+  jn1:
+    image: sutran-bigdata:ha-1
+    build: .
+    hostname: jn1
+    command:
+    - journalnode
+    environment:
+      ROLE_ID: jn1
+      HADOOP_HEAPSIZE_MAX: '128'
+      HADOOP_CONF_DIR: /tmp/hadoop-conf
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    mem_limit: 256m
+    networks:
+    - bigdata
+    volumes:
+    - jn1:/data/journal
+    - ./spark-env.sh:/opt/spark/conf/spark-env.sh:ro
+  dn1:
+    image: sutran-bigdata:ha-1
+    build: .
+    hostname: dn1
+    command:
+    - datanode
+    environment:
+      ROLE_ID: dn1
+      HADOOP_HEAPSIZE_MAX: '128'
+      HADOOP_CONF_DIR: /tmp/hadoop-conf
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    mem_limit: 384m
+    networks:
+    - bigdata
+    volumes:
+    - dn1:/data/data
+    - ./spark-env.sh:/opt/spark/conf/spark-env.sh:ro
+  nm1:
+    image: sutran-bigdata:ha-1
+    build: .
+    hostname: nm1
+    command:
+    - nodemanager
+    environment:
+      ROLE_ID: nm1
+      HADOOP_HEAPSIZE_MAX: '128'
+      HADOOP_CONF_DIR: /tmp/hadoop-conf
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    mem_limit: 1536m
+    networks:
+    - bigdata
+    volumes:
+    - nm1:/data/yarn
+    - ./spark-env.sh:/opt/spark/conf/spark-env.sh:ro
+  zk2:
+    image: zookeeper:3.8.7
+    hostname: zk2
+    environment:
+      ZOO_MY_ID: '2'
+      ZOO_SERVERS: server.1=zk1:2888:3888;2181 server.2=zk2:2888:3888;2181 server.3=zk3:2888:3888;2181
+      JVMFLAGS: -Xms64m -Xmx128m
+    volumes:
+    - zk2:/data
+    - zk2_log:/datalog
+    mem_limit: 256m
+    networks:
+    - bigdata
+  jn2:
+    image: sutran-bigdata:ha-1
+    build: .
+    hostname: jn2
+    command:
+    - journalnode
+    environment:
+      ROLE_ID: jn2
+      HADOOP_HEAPSIZE_MAX: '128'
+      HADOOP_CONF_DIR: /tmp/hadoop-conf
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    mem_limit: 256m
+    networks:
+    - bigdata
+    volumes:
+    - jn2:/data/journal
+    - ./spark-env.sh:/opt/spark/conf/spark-env.sh:ro
+  dn2:
+    image: sutran-bigdata:ha-1
+    build: .
+    hostname: dn2
+    command:
+    - datanode
+    environment:
+      ROLE_ID: dn2
+      HADOOP_HEAPSIZE_MAX: '128'
+      HADOOP_CONF_DIR: /tmp/hadoop-conf
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    mem_limit: 384m
+    networks:
+    - bigdata
+    volumes:
+    - dn2:/data/data
+    - ./spark-env.sh:/opt/spark/conf/spark-env.sh:ro
+  nm2:
+    image: sutran-bigdata:ha-1
+    build: .
+    hostname: nm2
+    command:
+    - nodemanager
+    environment:
+      ROLE_ID: nm2
+      HADOOP_HEAPSIZE_MAX: '128'
+      HADOOP_CONF_DIR: /tmp/hadoop-conf
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    mem_limit: 1536m
+    networks:
+    - bigdata
+    volumes:
+    - nm2:/data/yarn
+    - ./spark-env.sh:/opt/spark/conf/spark-env.sh:ro
+  zk3:
+    image: zookeeper:3.8.7
+    hostname: zk3
+    environment:
+      ZOO_MY_ID: '3'
+      ZOO_SERVERS: server.1=zk1:2888:3888;2181 server.2=zk2:2888:3888;2181 server.3=zk3:2888:3888;2181
+      JVMFLAGS: -Xms64m -Xmx128m
+    volumes:
+    - zk3:/data
+    - zk3_log:/datalog
+    mem_limit: 256m
+    networks:
+    - bigdata
+  jn3:
+    image: sutran-bigdata:ha-1
+    build: .
+    hostname: jn3
+    command:
+    - journalnode
+    environment:
+      ROLE_ID: jn3
+      HADOOP_HEAPSIZE_MAX: '128'
+      HADOOP_CONF_DIR: /tmp/hadoop-conf
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    mem_limit: 256m
+    networks:
+    - bigdata
+    volumes:
+    - jn3:/data/journal
+    - ./spark-env.sh:/opt/spark/conf/spark-env.sh:ro
+  dn3:
+    image: sutran-bigdata:ha-1
+    build: .
+    hostname: dn3
+    command:
+    - datanode
+    environment:
+      ROLE_ID: dn3
+      HADOOP_HEAPSIZE_MAX: '128'
+      HADOOP_CONF_DIR: /tmp/hadoop-conf
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    mem_limit: 384m
+    networks:
+    - bigdata
+    volumes:
+    - dn3:/data/data
+    - ./spark-env.sh:/opt/spark/conf/spark-env.sh:ro
+  nm3:
+    image: sutran-bigdata:ha-1
+    build: .
+    hostname: nm3
+    command:
+    - nodemanager
+    environment:
+      ROLE_ID: nm3
+      HADOOP_HEAPSIZE_MAX: '128'
+      HADOOP_CONF_DIR: /tmp/hadoop-conf
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    mem_limit: 1536m
+    networks:
+    - bigdata
+    volumes:
+    - nm3:/data/yarn
+    - ./spark-env.sh:/opt/spark/conf/spark-env.sh:ro
+  nn1:
+    image: sutran-bigdata:ha-1
+    build: .
+    hostname: nn1
+    command:
+    - namenode
+    environment:
+      ROLE_ID: nn1
+      HADOOP_HEAPSIZE_MAX: '256'
+      HADOOP_CONF_DIR: /tmp/hadoop-conf
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    mem_limit: 640m
+    networks:
+    - bigdata
+    volumes:
+    - nn1:/data/name
+    - ./spark-env.sh:/opt/spark/conf/spark-env.sh:ro
+    ports:
+    - 127.0.0.1:9870:9870
+  zkfc1:
+    image: sutran-bigdata:ha-1
+    build: .
+    command:
+    - zkfc
+    environment:
+      ROLE_ID: nn1
+      HADOOP_HEAPSIZE_MAX: '128'
+      HADOOP_CONF_DIR: /tmp/hadoop-conf
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    mem_limit: 256m
+    volumes:
+    - ./spark-env.sh:/opt/spark/conf/spark-env.sh:ro
+    network_mode: service:nn1
+    depends_on:
+    - nn1
+  rm1:
+    image: sutran-bigdata:ha-1
+    build: .
+    hostname: rm1
+    command:
+    - resourcemanager
+    environment:
+      ROLE_ID: rm1
+      HADOOP_HEAPSIZE_MAX: '256'
+      HADOOP_CONF_DIR: /tmp/hadoop-conf
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    mem_limit: 512m
+    networks:
+    - bigdata
+    ports:
+    - 127.0.0.1:8088:8088
+    volumes:
+    - ./spark-env.sh:/opt/spark/conf/spark-env.sh:ro
+  nn2:
+    image: sutran-bigdata:ha-1
+    build: .
+    hostname: nn2
+    command:
+    - namenode
+    environment:
+      ROLE_ID: nn2
+      HADOOP_HEAPSIZE_MAX: '256'
+      HADOOP_CONF_DIR: /tmp/hadoop-conf
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    mem_limit: 640m
+    networks:
+    - bigdata
+    volumes:
+    - nn2:/data/name
+    - ./spark-env.sh:/opt/spark/conf/spark-env.sh:ro
+    ports:
+    - 127.0.0.1:9871:9870
+  zkfc2:
+    image: sutran-bigdata:ha-1
+    build: .
+    command:
+    - zkfc
+    environment:
+      ROLE_ID: nn2
+      HADOOP_HEAPSIZE_MAX: '128'
+      HADOOP_CONF_DIR: /tmp/hadoop-conf
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    mem_limit: 256m
+    volumes:
+    - ./spark-env.sh:/opt/spark/conf/spark-env.sh:ro
+    network_mode: service:nn2
+    depends_on:
+    - nn2
+  rm2:
+    image: sutran-bigdata:ha-1
+    build: .
+    hostname: rm2
+    command:
+    - resourcemanager
+    environment:
+      ROLE_ID: rm2
+      HADOOP_HEAPSIZE_MAX: '256'
+      HADOOP_CONF_DIR: /tmp/hadoop-conf
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    mem_limit: 512m
+    networks:
+    - bigdata
+    ports:
+    - 127.0.0.1:8089:8088
+    volumes:
+    - ./spark-env.sh:/opt/spark/conf/spark-env.sh:ro
+  jupyter:
+    image: sutran-bigdata:ha-1
+    build: .
+    hostname: jupyter
+    command:
+    - jupyter
+    environment:
+      ROLE_ID: jupyter
+      HADOOP_HEAPSIZE_MAX: '128'
+      JUPYTER_TOKEN: ${JUPYTER_TOKEN:?Falta .env}
+      HADOOP_CONF_DIR: /tmp/hadoop-conf
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    mem_limit: 1536m
+    networks:
+    - bigdata
+    volumes:
+    - ./workspace:/workspace
+    - ./spark-env.sh:/opt/spark/conf/spark-env.sh:ro
+    - ../Datos_originales:/inputs:ro
+    - ../Proyecto_SUTRAN:/project
+    - ./role_config.py:/opt/role_config.py:ro
+    ports:
+    - 127.0.0.1:8888:8888
+    - 127.0.0.1:4040:4040
+  metastore:
+    image: apache/hive:3.1.3
+    hostname: metastore
+    profiles:
+    - catalogo
+    environment:
+      SERVICE_NAME: metastore
+      HIVE_CUSTOM_CONF_DIR: /hive_custom_conf
+      HADOOP_HEAPSIZE: '512'
+    volumes:
+    - ./conf:/hive_custom_conf:ro
+    - metastore_db:/opt/hive/data
+    - ./catalog-entrypoint.sh:/opt/catalog-entrypoint.sh:ro
+    mem_limit: 1024m
+    networks:
+    - bigdata
+    entrypoint:
+    - /bin/bash
+    - /opt/catalog-entrypoint.sh
+volumes:
+  zk1: {}
+  jn1: {}
+  dn1: {}
+  nm1: {}
+  zk2: {}
+  jn2: {}
+  dn2: {}
+  nm2: {}
+  zk3: {}
+  jn3: {}
+  dn3: {}
+  nm3: {}
+  nn1: {}
+  nn2: {}
+  metastore_db: {}
+  zk1_log: {}
+  zk2_log: {}
+  zk3_log: {}
+networks:
+  bigdata: {}

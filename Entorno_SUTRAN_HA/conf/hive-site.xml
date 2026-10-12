@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<configuration>
+  <property><name>hive.metastore.uris</name><value>thrift://metastore:9083</value></property>
+  <property><name>javax.jdo.option.ConnectionURL</name><value>jdbc:derby:;databaseName=/opt/hive/data/metastore_db;create=true</value></property>
+  <property><name>javax.jdo.option.ConnectionDriverName</name><value>org.apache.derby.jdbc.EmbeddedDriver</value></property>
+  <property><name>hive.metastore.warehouse.dir</name><value>hdfs://sutran/user/hive/warehouse</value></property>
+  <property><name>hive.metastore.schema.verification</name><value>true</value></property>
+</configuration>

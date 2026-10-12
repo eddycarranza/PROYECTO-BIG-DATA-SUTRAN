@@ -1,0 +1,671 @@
+{
+  "run_id_pipeline": "20261008T203141Z_83442227",
+  "application_id": "application_1791488189127_0005",
+  "started_utc": "2026-10-08T20:45:21.147392+00:00",
+  "tables": {
+    "F01": {
+      "rows": 8148,
+      "schema_mismatch": []
+    },
+    "F02": {
+      "rows": 160018,
+      "schema_mismatch": []
+    },
+    "F03": {
+      "rows": 11454,
+      "schema_mismatch": []
+    },
+    "F04": {
+      "rows": 36,
+      "schema_mismatch": []
+    },
+    "F05": {
+      "rows": 4546,
+      "schema_mismatch": []
+    },
+    "F06": {
+      "rows": 103092,
+      "schema_mismatch": []
+    },
+    "F07": {
+      "rows": 36,
+      "schema_mismatch": []
+    }
+  },
+  "rejected_total": 85,
+  "rules": [
+    {
+      "tabla": "F01",
+      "regla": "Tipos esperados de columnas críticas",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F01",
+      "regla": "Filas coinciden con salida del pipeline",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F01",
+      "regla": "Originales = aceptados + rechazados",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F01",
+      "regla": "Departamento informado",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F01",
+      "regla": "SHA-256 de procedencia presente",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F01",
+      "regla": "Fecha válida",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F01",
+      "regla": "kilometro no negativo",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F01",
+      "regla": "kilometro informado",
+      "severidad": "advertencia",
+      "incumplimientos": 43,
+      "estado": "REVISAR"
+    },
+    {
+      "tabla": "F01",
+      "regla": "fallecidos no negativo",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F01",
+      "regla": "fallecidos informado",
+      "severidad": "advertencia",
+      "incumplimientos": 3,
+      "estado": "REVISAR"
+    },
+    {
+      "tabla": "F01",
+      "regla": "heridos no negativo",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F01",
+      "regla": "heridos informado",
+      "severidad": "advertencia",
+      "incumplimientos": 10,
+      "estado": "REVISAR"
+    },
+    {
+      "tabla": "F01",
+      "regla": "Código de ruta informado",
+      "severidad": "advertencia",
+      "incumplimientos": 39,
+      "estado": "REVISAR"
+    },
+    {
+      "tabla": "F01",
+      "regla": "Cantidad en cuarentena coincide con informe",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F02",
+      "regla": "Tipos esperados de columnas críticas",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F02",
+      "regla": "Filas coinciden con salida del pipeline",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F02",
+      "regla": "Originales = aceptados + rechazados",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F02",
+      "regla": "Departamento informado",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F02",
+      "regla": "SHA-256 de procedencia presente",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F02",
+      "regla": "Fecha válida",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F02",
+      "regla": "Límite positivo y velocidad no negativa",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F02",
+      "regla": "Exceso coincide con velocidad menos límite",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F02",
+      "regla": "Registro de exceso con velocidad superior al límite",
+      "severidad": "advertencia",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F02",
+      "regla": "Cantidad en cuarentena coincide con informe",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F03",
+      "regla": "Tipos esperados de columnas críticas",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F03",
+      "regla": "Filas coinciden con salida del pipeline",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F03",
+      "regla": "Originales = aceptados + rechazados",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F03",
+      "regla": "Departamento informado",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F03",
+      "regla": "SHA-256 de procedencia presente",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F03",
+      "regla": "Período válido y coincide con año/mes",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F03",
+      "regla": "Total = ligeros + pesados",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F03",
+      "regla": "Todas las medidas de flujo informadas y no negativas",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F03",
+      "regla": "Clave peaje-período única",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F03",
+      "regla": "Cantidad en cuarentena coincide con informe",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F04",
+      "regla": "Tipos esperados de columnas críticas",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F04",
+      "regla": "Filas coinciden con salida del pipeline",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F04",
+      "regla": "Originales = aceptados + rechazados",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F04",
+      "regla": "Departamento informado",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F04",
+      "regla": "SHA-256 de procedencia presente",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F04",
+      "regla": "Fecha de corte válida",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F04",
+      "regla": "Coordenadas dentro de rangos geográficos",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F04",
+      "regla": "UBIGEO de seis dígitos",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F04",
+      "regla": "Cantidad en cuarentena coincide con informe",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F05",
+      "regla": "Tipos esperados de columnas críticas",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F05",
+      "regla": "Filas coinciden con salida del pipeline",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F05",
+      "regla": "Originales = aceptados + rechazados",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F05",
+      "regla": "Departamento informado",
+      "severidad": "advertencia",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F05",
+      "regla": "SHA-256 de procedencia presente",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F05",
+      "regla": "Código de ruta informado",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F05",
+      "regla": "Cantidad en cuarentena coincide con informe",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F06",
+      "regla": "Tipos esperados de columnas críticas",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F06",
+      "regla": "Filas coinciden con salida del pipeline",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F06",
+      "regla": "Originales = aceptados + rechazados",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F06",
+      "regla": "Departamento informado",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F06",
+      "regla": "SHA-256 de procedencia presente",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F06",
+      "regla": "Fecha válida",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F06",
+      "regla": "Límite positivo y velocidad no negativa",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F06",
+      "regla": "Exceso coincide con velocidad menos límite",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F06",
+      "regla": "Registro de exceso con velocidad superior al límite",
+      "severidad": "advertencia",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F06",
+      "regla": "Cantidad en cuarentena coincide con informe",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F07",
+      "regla": "Tipos esperados de columnas críticas",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F07",
+      "regla": "Filas coinciden con salida del pipeline",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F07",
+      "regla": "Originales = aceptados + rechazados",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F07",
+      "regla": "Departamento informado",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F07",
+      "regla": "SHA-256 de procedencia presente",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F07",
+      "regla": "Fecha de corte válida",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F07",
+      "regla": "Coordenadas dentro de rangos geográficos",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F07",
+      "regla": "UBIGEO de seis dígitos",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "F07",
+      "regla": "Cantidad en cuarentena coincide con informe",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "INTEGRACION",
+      "regla": "Clave departamento-mes única",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "INTEGRACION",
+      "regla": "Unión sin multiplicación",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "INTEGRACION",
+      "regla": "Mes dentro de enero-septiembre 2021",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "INTEGRACION",
+      "regla": "Conteo de accidentes positivo",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "INTEGRACION",
+      "regla": "Cobertura velocidad coincide con presencia de dato",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    },
+    {
+      "tabla": "INTEGRACION",
+      "regla": "Cobertura peajes coincide con presencia de dato",
+      "severidad": "bloqueante",
+      "incumplimientos": 0,
+      "estado": "CUMPLE"
+    }
+  ],
+  "outliers": [
+    {
+      "tabla": "F01",
+      "campo": "fallecidos",
+      "q1": 0.0,
+      "q3": 0.0,
+      "limite_inferior": 0.0,
+      "limite_superior": 0.0,
+      "filas_fuera_iqr": null,
+      "error_relativo_cuantiles": 0.01,
+      "decision": "IQR cero: criterio no concluyente, no eliminar."
+    },
+    {
+      "tabla": "F01",
+      "campo": "heridos",
+      "q1": 0.0,
+      "q3": 2.0,
+      "limite_inferior": -3.0,
+      "limite_superior": 5.0,
+      "filas_fuera_iqr": 251,
+      "error_relativo_cuantiles": 0.01,
+      "decision": "Señalar para revisión; no eliminar automáticamente."
+    },
+    {
+      "tabla": "F02",
+      "campo": "velocidad_kmh",
+      "q1": 76.0,
+      "q3": 113.0,
+      "limite_inferior": 20.5,
+      "limite_superior": 168.5,
+      "filas_fuera_iqr": 146,
+      "error_relativo_cuantiles": 0.01,
+      "decision": "Señalar para revisión; no eliminar automáticamente."
+    },
+    {
+      "tabla": "F02",
+      "campo": "exceso_kmh",
+      "q1": 12.0,
+      "q3": 31.0,
+      "limite_inferior": -16.5,
+      "limite_superior": 59.5,
+      "filas_fuera_iqr": 3886,
+      "error_relativo_cuantiles": 0.01,
+      "decision": "Señalar para revisión; no eliminar automáticamente."
+    },
+    {
+      "tabla": "F03",
+      "campo": "veh_total",
+      "q1": 22490.0,
+      "q3": 98441.0,
+      "limite_inferior": -91436.5,
+      "limite_superior": 212367.5,
+      "filas_fuera_iqr": 1127,
+      "error_relativo_cuantiles": 0.01,
+      "decision": "Señalar para revisión; no eliminar automáticamente."
+    },
+    {
+      "tabla": "F06",
+      "campo": "velocidad_kmh",
+      "q1": 79.0,
+      "q3": 116.0,
+      "limite_inferior": 23.5,
+      "limite_superior": 171.5,
+      "filas_fuera_iqr": 80,
+      "error_relativo_cuantiles": 0.01,
+      "decision": "Señalar para revisión; no eliminar automáticamente."
+    },
+    {
+      "tabla": "F06",
+      "campo": "exceso_kmh",
+      "q1": 11.0,
+      "q3": 27.0,
+      "limite_inferior": -13.0,
+      "limite_superior": 51.0,
+      "filas_fuera_iqr": 2993,
+      "error_relativo_cuantiles": 0.01,
+      "decision": "Señalar para revisión; no eliminar automáticamente."
+    }
+  ],
+  "rejection_reasons": [
+    {
+      "fuente": "F01",
+      "motivo": "departamento_no_informado",
+      "filas": 7
+    },
+    {
+      "fuente": "F03",
+      "motivo": "datos_sin_encabezado",
+      "filas": 4
+    },
+    {
+      "fuente": "F03",
+      "motivo": "peaje_periodo_ambiguo",
+      "filas": 74
+    }
+  ],
+  "blocking_failures": 0,
+  "warnings": 4,
+  "status": "passed",
+  "notes": [
+    "Completitud: no nulo, no NaN ni marcador explícito de ausencia; cero numérico es válido.",
+    "Cobertura de fuentes externas se mide aparte; dato ausente no se sustituye por cero.",
+    "IQR aproximado es una señal de revisión, no prueba de error ni criterio de descarte.",
+    "Rango geográfico global y UBIGEO de seis dígitos no validan ubicación ni pertenencia administrativa.",
+    "Este control no modifica las tablas de 3.3; un fallo bloqueante requiere corregir y reejecutar antes de entrenar.",
+    "Motivos de rechazo pueden superponerse: no sumar motivos para calcular registros únicos rechazados."
+  ],
+  "finished_utc": "2026-10-08T20:46:21.588715+00:00"
+}

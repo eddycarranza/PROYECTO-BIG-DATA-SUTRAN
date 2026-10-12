@@ -1,0 +1,20 @@
+{
+  "codigo": "Ruff y sintaxis Python/PowerShell comprobados",
+  "pruebas_unitarias": 6,
+  "compose": "Configuración validada sin imprimir credenciales",
+  "prediccion_contenedor_temporal": {
+    "filas": 5,
+    "entrenamiento_ejecutado": false,
+    "coinciden_con_predicciones_originales": true,
+    "tolerancia_absoluta": 1e-09
+  },
+  "logica_pipeline_conservada_ast": [
+    "pipeline_33.py",
+    "pipeline_escalabilidad_37.py",
+    "control_calidad_34.py",
+    "almacenamiento_35.py",
+    "validar_escalabilidad_37.py",
+    "preparar_escalabilidad_37.py"
+  ],
+  "alcance": "No se reconstruyó la imagen ni se repitieron las etapas largas del pipeline; la prueba usa la imagen existente del laboratorio. Las métricas publicadas se recalcularon a partir del CSV de prueba."
+}

@@ -1,0 +1,154 @@
+{
+  "run_id": "20261008T203141Z_83442227",
+  "status": "success",
+  "sources": {
+    "F01": {
+      "raw_rows": 8155,
+      "input": "hdfs://sutran/sutran/raw/source=accidentes/acquired=2026-10-07/version=62528d432d4259548709d5c4d0c8c033996796da6fefadc9ed59064fbb8b07f3/accidentes_2020_2021.csv",
+      "duplicates_extra": 35,
+      "duplicate_policy": "Retenidos para revisión; flujo excluye además claves peaje-periodo ambiguas.",
+      "accepted": 8148,
+      "quarantined": 7
+    },
+    "F02": {
+      "raw_rows": 160018,
+      "input": "hdfs://sutran/sutran/raw/source=velocidad_2019_2021/acquired=2026-10-07/version=0877182460457fe68afb013c208bc085eb285549d975dfd48b3e145bc9603395/velocidad_2019_2021.csv",
+      "duplicates_extra": 0,
+      "duplicate_policy": "Retenidos para revisión; flujo excluye además claves peaje-periodo ambiguas.",
+      "accepted": 160018,
+      "quarantined": 0
+    },
+    "F03": {
+      "raw_rows": 11532,
+      "input": "hdfs://sutran/sutran/raw/source=flujo_peajes/acquired=2026-10-07/version=b0055a28c664fadd07ecd92f7bb37e2031684a323b822ba5354ec82a0de88cf0/flujo_peajes_2014_2026_t1.csv",
+      "duplicates_extra": 0,
+      "duplicate_policy": "Retenidos para revisión; flujo excluye además claves peaje-periodo ambiguas.",
+      "accepted": 11454,
+      "quarantined": 78
+    },
+    "F04": {
+      "raw_rows": 36,
+      "input": "hdfs://sutran/sutran/raw/source=pesaje_2021/acquired=2026-10-07/version=95d97f7d66d6a56a6b6a922f5a886ae881256943a90620bbb5830fa62d64fce7/pesaje_2021.csv",
+      "duplicates_extra": 0,
+      "duplicate_policy": "Retenidos para revisión; flujo excluye además claves peaje-periodo ambiguas.",
+      "accepted": 36,
+      "quarantined": 0
+    },
+    "F07": {
+      "raw_rows": 36,
+      "input": "hdfs://sutran/sutran/raw/source=pesaje_2022/acquired=2026-10-07/version=5f5185f2505ddc4c57fc65b20fa4731dfef921947b773de3731409fed25d7e0f/pesaje_2022.csv",
+      "duplicates_extra": 0,
+      "duplicate_policy": "Retenidos para revisión; flujo excluye además claves peaje-periodo ambiguas.",
+      "accepted": 36,
+      "quarantined": 0
+    },
+    "F05": {
+      "raw_rows": 4546,
+      "input": "hdfs://sutran/sutran/raw/source=red_vial_2018/acquired=2026-10-07/version=ec2d279a21bb904b9ce348e11a2d0f9700530fd71c73b5fbbcd4e4763a76c5a7/red_vial_nacional_2018.zip",
+      "duplicates_extra": 0,
+      "duplicate_policy": "Retenidos para revisión; flujo excluye además claves peaje-periodo ambiguas.",
+      "accepted": 4546,
+      "quarantined": 0
+    },
+    "F06": {
+      "raw_rows": 103092,
+      "input": "hdfs://sutran/sutran/raw/source=velocidad_2022/acquired=2026-10-07/version=a684f8efa8fa9a0a149264284cc8f2dae4b44eff2ad821cec884365a551c7ff0/velocidad_2022.xlsx",
+      "duplicates_extra": 0,
+      "duplicate_policy": "Retenidos para revisión; flujo excluye además claves peaje-periodo ambiguas.",
+      "accepted": 103092,
+      "quarantined": 0
+    }
+  },
+  "outputs": {
+    "quarantine/F01": {
+      "path": "hdfs://sutran/sutran/quarantine/run=20261008T203141Z_83442227/F01",
+      "rows": 7
+    },
+    "standardized/accidentes": {
+      "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/accidentes",
+      "rows": 8148
+    },
+    "quarantine/F02": {
+      "path": "hdfs://sutran/sutran/quarantine/run=20261008T203141Z_83442227/F02",
+      "rows": 0
+    },
+    "standardized/velocidad_2019_2021": {
+      "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/velocidad_2019_2021",
+      "rows": 160018
+    },
+    "quarantine/F06": {
+      "path": "hdfs://sutran/sutran/quarantine/run=20261008T203141Z_83442227/F06",
+      "rows": 0
+    },
+    "standardized/velocidad_2022_reserva": {
+      "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/velocidad_2022_reserva",
+      "rows": 103092
+    },
+    "quarantine/F03": {
+      "path": "hdfs://sutran/sutran/quarantine/run=20261008T203141Z_83442227/F03",
+      "rows": 78
+    },
+    "standardized/flujo_peajes": {
+      "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/flujo_peajes",
+      "rows": 11454
+    },
+    "quarantine/F04": {
+      "path": "hdfs://sutran/sutran/quarantine/run=20261008T203141Z_83442227/F04",
+      "rows": 0
+    },
+    "standardized/pesaje_2021_contexto": {
+      "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/pesaje_2021_contexto",
+      "rows": 36
+    },
+    "quarantine/F07": {
+      "path": "hdfs://sutran/sutran/quarantine/run=20261008T203141Z_83442227/F07",
+      "rows": 0
+    },
+    "standardized/pesaje_2022_reserva": {
+      "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/pesaje_2022_reserva",
+      "rows": 36
+    },
+    "quarantine/F05": {
+      "path": "hdfs://sutran/sutran/quarantine/run=20261008T203141Z_83442227/F05",
+      "rows": 0
+    },
+    "standardized/red_vial_2018_atributos": {
+      "path": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/red_vial_2018_atributos",
+      "rows": 4546
+    },
+    "curated/dimension_ruta_departamento_2018": {
+      "path": "hdfs://sutran/sutran/curated/run=20261008T203141Z_83442227/dimension_ruta_departamento_2018",
+      "rows": 248
+    },
+    "quarantine/rutas_sin_correspondencia_2018_revision": {
+      "path": "hdfs://sutran/sutran/quarantine/run=20261008T203141Z_83442227/rutas_sin_correspondencia_2018_revision",
+      "rows": 145
+    },
+    "curated/accidentes_ruta_departamento_mes": {
+      "path": "hdfs://sutran/sutran/curated/run=20261008T203141Z_83442227/accidentes_ruta_departamento_mes",
+      "rows": 845
+    },
+    "curated/integracion_departamento_mes_2021": {
+      "path": "hdfs://sutran/sutran/curated/run=20261008T203141Z_83442227/integracion_departamento_mes_2021",
+      "rows": 218
+    },
+    "serving/indicadores_departamento_mes_2021": {
+      "path": "hdfs://sutran/sutran/serving/run=20261008T203141Z_83442227/indicadores_departamento_mes_2021",
+      "rows": 218
+    }
+  },
+  "periodo_integracion": "2021-01-01 a 2021-09-30",
+  "limitations": [
+    "Registros repetidos de accidentes retenidos y señalados: no hay ID de evento.",
+    "Unión de velocidad y flujo solo por departamento-mes, no por tramo.",
+    "Flujo representa conteos de paso en peajes; no vehículos únicos ni exposición exacta a accidentes.",
+    "Rutas 2018 son referencia histórica, no certifican vigencia en 2021.",
+    "Estaciones con corte octubre 2021 y datos 2022 no se unen como variables históricas de enero-septiembre 2021.",
+    "Sin clima ni modelo entrenado en esta etapa."
+  ],
+  "application_id": "application_1791488189127_0004",
+  "serving_path": "hdfs://sutran/sutran/serving/run=20261008T203141Z_83442227/indicadores_departamento_mes_2021",
+  "join_rows_before": 218,
+  "join_rows_after": 218,
+  "elapsed_seconds": 165.295255
+}

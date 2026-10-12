@@ -1,0 +1,76 @@
+﻿tabla,regla,severidad,incumplimientos,estado
+F01,Tipos esperados de columnas críticas,bloqueante,0,CUMPLE
+F01,Filas coinciden con salida del pipeline,bloqueante,0,CUMPLE
+F01,Originales = aceptados + rechazados,bloqueante,0,CUMPLE
+F01,Departamento informado,bloqueante,0,CUMPLE
+F01,SHA-256 de procedencia presente,bloqueante,0,CUMPLE
+F01,Fecha válida,bloqueante,0,CUMPLE
+F01,kilometro no negativo,bloqueante,0,CUMPLE
+F01,kilometro informado,advertencia,43,REVISAR
+F01,fallecidos no negativo,bloqueante,0,CUMPLE
+F01,fallecidos informado,advertencia,3,REVISAR
+F01,heridos no negativo,bloqueante,0,CUMPLE
+F01,heridos informado,advertencia,10,REVISAR
+F01,Código de ruta informado,advertencia,39,REVISAR
+F01,Cantidad en cuarentena coincide con informe,bloqueante,0,CUMPLE
+F02,Tipos esperados de columnas críticas,bloqueante,0,CUMPLE
+F02,Filas coinciden con salida del pipeline,bloqueante,0,CUMPLE
+F02,Originales = aceptados + rechazados,bloqueante,0,CUMPLE
+F02,Departamento informado,bloqueante,0,CUMPLE
+F02,SHA-256 de procedencia presente,bloqueante,0,CUMPLE
+F02,Fecha válida,bloqueante,0,CUMPLE
+F02,Límite positivo y velocidad no negativa,bloqueante,0,CUMPLE
+F02,Exceso coincide con velocidad menos límite,bloqueante,0,CUMPLE
+F02,Registro de exceso con velocidad superior al límite,advertencia,0,CUMPLE
+F02,Cantidad en cuarentena coincide con informe,bloqueante,0,CUMPLE
+F03,Tipos esperados de columnas críticas,bloqueante,0,CUMPLE
+F03,Filas coinciden con salida del pipeline,bloqueante,0,CUMPLE
+F03,Originales = aceptados + rechazados,bloqueante,0,CUMPLE
+F03,Departamento informado,bloqueante,0,CUMPLE
+F03,SHA-256 de procedencia presente,bloqueante,0,CUMPLE
+F03,Período válido y coincide con año/mes,bloqueante,0,CUMPLE
+F03,Total = ligeros + pesados,bloqueante,0,CUMPLE
+F03,Todas las medidas de flujo informadas y no negativas,bloqueante,0,CUMPLE
+F03,Clave peaje-período única,bloqueante,0,CUMPLE
+F03,Cantidad en cuarentena coincide con informe,bloqueante,0,CUMPLE
+F04,Tipos esperados de columnas críticas,bloqueante,0,CUMPLE
+F04,Filas coinciden con salida del pipeline,bloqueante,0,CUMPLE
+F04,Originales = aceptados + rechazados,bloqueante,0,CUMPLE
+F04,Departamento informado,bloqueante,0,CUMPLE
+F04,SHA-256 de procedencia presente,bloqueante,0,CUMPLE
+F04,Fecha de corte válida,bloqueante,0,CUMPLE
+F04,Coordenadas dentro de rangos geográficos,bloqueante,0,CUMPLE
+F04,UBIGEO de seis dígitos,bloqueante,0,CUMPLE
+F04,Cantidad en cuarentena coincide con informe,bloqueante,0,CUMPLE
+F05,Tipos esperados de columnas críticas,bloqueante,0,CUMPLE
+F05,Filas coinciden con salida del pipeline,bloqueante,0,CUMPLE
+F05,Originales = aceptados + rechazados,bloqueante,0,CUMPLE
+F05,Departamento informado,advertencia,0,CUMPLE
+F05,SHA-256 de procedencia presente,bloqueante,0,CUMPLE
+F05,Código de ruta informado,bloqueante,0,CUMPLE
+F05,Cantidad en cuarentena coincide con informe,bloqueante,0,CUMPLE
+F06,Tipos esperados de columnas críticas,bloqueante,0,CUMPLE
+F06,Filas coinciden con salida del pipeline,bloqueante,0,CUMPLE
+F06,Originales = aceptados + rechazados,bloqueante,0,CUMPLE
+F06,Departamento informado,bloqueante,0,CUMPLE
+F06,SHA-256 de procedencia presente,bloqueante,0,CUMPLE
+F06,Fecha válida,bloqueante,0,CUMPLE
+F06,Límite positivo y velocidad no negativa,bloqueante,0,CUMPLE
+F06,Exceso coincide con velocidad menos límite,bloqueante,0,CUMPLE
+F06,Registro de exceso con velocidad superior al límite,advertencia,0,CUMPLE
+F06,Cantidad en cuarentena coincide con informe,bloqueante,0,CUMPLE
+F07,Tipos esperados de columnas críticas,bloqueante,0,CUMPLE
+F07,Filas coinciden con salida del pipeline,bloqueante,0,CUMPLE
+F07,Originales = aceptados + rechazados,bloqueante,0,CUMPLE
+F07,Departamento informado,bloqueante,0,CUMPLE
+F07,SHA-256 de procedencia presente,bloqueante,0,CUMPLE
+F07,Fecha de corte válida,bloqueante,0,CUMPLE
+F07,Coordenadas dentro de rangos geográficos,bloqueante,0,CUMPLE
+F07,UBIGEO de seis dígitos,bloqueante,0,CUMPLE
+F07,Cantidad en cuarentena coincide con informe,bloqueante,0,CUMPLE
+INTEGRACION,Clave departamento-mes única,bloqueante,0,CUMPLE
+INTEGRACION,Unión sin multiplicación,bloqueante,0,CUMPLE
+INTEGRACION,Mes dentro de enero-septiembre 2021,bloqueante,0,CUMPLE
+INTEGRACION,Conteo de accidentes positivo,bloqueante,0,CUMPLE
+INTEGRACION,Cobertura velocidad coincide con presencia de dato,bloqueante,0,CUMPLE
+INTEGRACION,Cobertura peajes coincide con presencia de dato,bloqueante,0,CUMPLE

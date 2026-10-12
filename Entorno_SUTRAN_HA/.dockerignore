@@ -1,0 +1,5 @@
+.env
+workspace
+*.zip
+README.md
+*.ps1

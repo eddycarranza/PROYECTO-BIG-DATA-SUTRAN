@@ -1,0 +1,8 @@
+﻿tabla,campo,q1,q3,limite_inferior,limite_superior,filas_fuera_iqr,error_relativo_cuantiles,decision
+F01,fallecidos,0.0,0.0,0.0,0.0,,0.01,"IQR cero: criterio no concluyente, no eliminar."
+F01,heridos,0.0,2.0,-3.0,5.0,251,0.01,Señalar para revisión; no eliminar automáticamente.
+F02,velocidad_kmh,76.0,113.0,20.5,168.5,146,0.01,Señalar para revisión; no eliminar automáticamente.
+F02,exceso_kmh,12.0,31.0,-16.5,59.5,3886,0.01,Señalar para revisión; no eliminar automáticamente.
+F03,veh_total,22490.0,98441.0,-91436.5,212367.5,1127,0.01,Señalar para revisión; no eliminar automáticamente.
+F06,velocidad_kmh,79.0,116.0,23.5,171.5,80,0.01,Señalar para revisión; no eliminar automáticamente.
+F06,exceso_kmh,11.0,27.0,-13.0,51.0,2993,0.01,Señalar para revisión; no eliminar automáticamente.

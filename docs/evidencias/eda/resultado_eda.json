@@ -1,0 +1,417 @@
+{
+  "status": "success",
+  "run_id": "20261008T230253Z_13e8446c",
+  "pipeline_run": "20261008T203141Z_83442227",
+  "layout_id": "20261008T205415Z_7534de98",
+  "application_id": "application_1791488189127_0012",
+  "paths": {
+    "standardized/accidentes": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/accidentes",
+    "standardized/velocidad_2019_2021": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/velocidad_2019_2021",
+    "standardized/velocidad_2022_reserva": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/velocidad_2022_reserva",
+    "standardized/flujo_peajes": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/flujo_peajes",
+    "standardized/pesaje_2021_contexto": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/pesaje_2021_contexto",
+    "standardized/pesaje_2022_reserva": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/pesaje_2022_reserva",
+    "standardized/red_vial_2018_atributos": "hdfs://sutran/sutran/standardized/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/red_vial_2018_atributos",
+    "curated/dimension_ruta_departamento_2018": "hdfs://sutran/sutran/curated/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/dimension_ruta_departamento_2018",
+    "curated/accidentes_ruta_departamento_mes": "hdfs://sutran/sutran/curated/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/accidentes_ruta_departamento_mes",
+    "curated/integracion_departamento_mes_2021": "hdfs://sutran/sutran/curated/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/integracion_departamento_mes_2021",
+    "serving/indicadores_departamento_mes_2021": "hdfs://sutran/sutran/serving/run=20261008T203141Z_83442227/layout=20261008T205415Z_7534de98/indicadores_departamento_mes_2021"
+  },
+  "period": [
+    "2021-01-01",
+    "2021-09-30"
+  ],
+  "unit": "departamento-mes observado en accidentes",
+  "synthetic_data_used": false,
+  "stats": {
+    "records": 4138,
+    "first_date": "2021-01-01",
+    "last_date": "2021-09-30",
+    "missing_fatalities": 0,
+    "missing_injuries": 0,
+    "duplicate_flagged_rows": 58
+  },
+  "coverage": {
+    "units": 218,
+    "departments": 25,
+    "grid_cells": 225,
+    "absent_accident_cells": 7,
+    "speed": 76,
+    "flow": 180,
+    "both": 76,
+    "neither": 38
+  },
+  "departments": [
+    {
+      "departamento": "LIMA",
+      "registros_accidentes": 764,
+      "fallecidos_reportados": 112,
+      "heridos_reportados": 917,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "AREQUIPA",
+      "registros_accidentes": 422,
+      "fallecidos_reportados": 56,
+      "heridos_reportados": 468,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "JUNIN",
+      "registros_accidentes": 323,
+      "fallecidos_reportados": 50,
+      "heridos_reportados": 440,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "ANCASH",
+      "registros_accidentes": 304,
+      "fallecidos_reportados": 49,
+      "heridos_reportados": 398,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "PUNO",
+      "registros_accidentes": 244,
+      "fallecidos_reportados": 51,
+      "heridos_reportados": 272,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "LAMBAYEQUE",
+      "registros_accidentes": 189,
+      "fallecidos_reportados": 24,
+      "heridos_reportados": 339,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "CAJAMARCA",
+      "registros_accidentes": 184,
+      "fallecidos_reportados": 20,
+      "heridos_reportados": 208,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "LA LIBERTAD",
+      "registros_accidentes": 182,
+      "fallecidos_reportados": 70,
+      "heridos_reportados": 236,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "ICA",
+      "registros_accidentes": 180,
+      "fallecidos_reportados": 27,
+      "heridos_reportados": 242,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "CUSCO",
+      "registros_accidentes": 174,
+      "fallecidos_reportados": 26,
+      "heridos_reportados": 258,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "SAN MARTIN",
+      "registros_accidentes": 164,
+      "fallecidos_reportados": 20,
+      "heridos_reportados": 265,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "PIURA",
+      "registros_accidentes": 155,
+      "fallecidos_reportados": 45,
+      "heridos_reportados": 177,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "APURIMAC",
+      "registros_accidentes": 110,
+      "fallecidos_reportados": 24,
+      "heridos_reportados": 174,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "MADRE DE DIOS",
+      "registros_accidentes": 109,
+      "fallecidos_reportados": 12,
+      "heridos_reportados": 126,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "MOQUEGUA",
+      "registros_accidentes": 102,
+      "fallecidos_reportados": 1,
+      "heridos_reportados": 106,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "UCAYALI",
+      "registros_accidentes": 92,
+      "fallecidos_reportados": 11,
+      "heridos_reportados": 119,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "AYACUCHO",
+      "registros_accidentes": 82,
+      "fallecidos_reportados": 39,
+      "heridos_reportados": 147,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "HUANUCO",
+      "registros_accidentes": 77,
+      "fallecidos_reportados": 11,
+      "heridos_reportados": 65,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "AMAZONAS",
+      "registros_accidentes": 74,
+      "fallecidos_reportados": 11,
+      "heridos_reportados": 89,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "PASCO",
+      "registros_accidentes": 60,
+      "fallecidos_reportados": 8,
+      "heridos_reportados": 100,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "TACNA",
+      "registros_accidentes": 57,
+      "fallecidos_reportados": 14,
+      "heridos_reportados": 96,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "LORETO",
+      "registros_accidentes": 40,
+      "fallecidos_reportados": 3,
+      "heridos_reportados": 52,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "HUANCAVELICA",
+      "registros_accidentes": 27,
+      "fallecidos_reportados": 6,
+      "heridos_reportados": 37,
+      "meses_observados": 7
+    },
+    {
+      "departamento": "TUMBES",
+      "registros_accidentes": 17,
+      "fallecidos_reportados": 5,
+      "heridos_reportados": 28,
+      "meses_observados": 9
+    },
+    {
+      "departamento": "CALLAO",
+      "registros_accidentes": 6,
+      "fallecidos_reportados": 1,
+      "heridos_reportados": 8,
+      "meses_observados": 4
+    }
+  ],
+  "months": [
+    {
+      "mes": "2021-01",
+      "registros_accidentes": 460,
+      "fallecidos_reportados": 58,
+      "heridos_reportados": 649,
+      "departamentos_observados": 24
+    },
+    {
+      "mes": "2021-02",
+      "registros_accidentes": 403,
+      "fallecidos_reportados": 39,
+      "heridos_reportados": 421,
+      "departamentos_observados": 24
+    },
+    {
+      "mes": "2021-03",
+      "registros_accidentes": 423,
+      "fallecidos_reportados": 73,
+      "heridos_reportados": 539,
+      "departamentos_observados": 23
+    },
+    {
+      "mes": "2021-04",
+      "registros_accidentes": 384,
+      "fallecidos_reportados": 89,
+      "heridos_reportados": 422,
+      "departamentos_observados": 23
+    },
+    {
+      "mes": "2021-05",
+      "registros_accidentes": 461,
+      "fallecidos_reportados": 68,
+      "heridos_reportados": 554,
+      "departamentos_observados": 24
+    },
+    {
+      "mes": "2021-06",
+      "registros_accidentes": 469,
+      "fallecidos_reportados": 105,
+      "heridos_reportados": 575,
+      "departamentos_observados": 25
+    },
+    {
+      "mes": "2021-07",
+      "registros_accidentes": 483,
+      "fallecidos_reportados": 61,
+      "heridos_reportados": 659,
+      "departamentos_observados": 25
+    },
+    {
+      "mes": "2021-08",
+      "registros_accidentes": 562,
+      "fallecidos_reportados": 144,
+      "heridos_reportados": 843,
+      "departamentos_observados": 25
+    },
+    {
+      "mes": "2021-09",
+      "registros_accidentes": 493,
+      "fallecidos_reportados": 59,
+      "heridos_reportados": 705,
+      "departamentos_observados": 25
+    }
+  ],
+  "dates_by_month": [
+    {
+      "mes": "2021-01",
+      "primera_fecha": "2021-01-01",
+      "ultima_fecha": "2021-01-31",
+      "dias_con_registros": 31
+    },
+    {
+      "mes": "2021-02",
+      "primera_fecha": "2021-02-01",
+      "ultima_fecha": "2021-02-28",
+      "dias_con_registros": 28
+    },
+    {
+      "mes": "2021-03",
+      "primera_fecha": "2021-03-01",
+      "ultima_fecha": "2021-03-31",
+      "dias_con_registros": 31
+    },
+    {
+      "mes": "2021-04",
+      "primera_fecha": "2021-04-01",
+      "ultima_fecha": "2021-04-30",
+      "dias_con_registros": 29
+    },
+    {
+      "mes": "2021-05",
+      "primera_fecha": "2021-05-01",
+      "ultima_fecha": "2021-05-31",
+      "dias_con_registros": 31
+    },
+    {
+      "mes": "2021-06",
+      "primera_fecha": "2021-06-01",
+      "ultima_fecha": "2021-06-30",
+      "dias_con_registros": 30
+    },
+    {
+      "mes": "2021-07",
+      "primera_fecha": "2021-07-01",
+      "ultima_fecha": "2021-07-31",
+      "dias_con_registros": 31
+    },
+    {
+      "mes": "2021-08",
+      "primera_fecha": "2021-08-01",
+      "ultima_fecha": "2021-08-31",
+      "dias_con_registros": 31
+    },
+    {
+      "mes": "2021-09",
+      "primera_fecha": "2021-09-01",
+      "ultima_fecha": "2021-09-30",
+      "dias_con_registros": 30
+    }
+  ],
+  "top_routes": [
+    {
+      "codigo_ruta": "PE-1N",
+      "departamento": "LIMA",
+      "registros_accidentes": 252,
+      "fallecidos_reportados": 33
+    },
+    {
+      "codigo_ruta": "PE-1S",
+      "departamento": "LIMA",
+      "registros_accidentes": 223,
+      "fallecidos_reportados": 22
+    },
+    {
+      "codigo_ruta": "PE-1S",
+      "departamento": "AREQUIPA",
+      "registros_accidentes": 216,
+      "fallecidos_reportados": 31
+    },
+    {
+      "codigo_ruta": "PE-22",
+      "departamento": "LIMA",
+      "registros_accidentes": 191,
+      "fallecidos_reportados": 43
+    },
+    {
+      "codigo_ruta": "PE-1N",
+      "departamento": "ANCASH",
+      "registros_accidentes": 165,
+      "fallecidos_reportados": 20
+    },
+    {
+      "codigo_ruta": "PE-1S",
+      "departamento": "ICA",
+      "registros_accidentes": 162,
+      "fallecidos_reportados": 25
+    },
+    {
+      "codigo_ruta": "PE-5N",
+      "departamento": "SAN MARTIN",
+      "registros_accidentes": 151,
+      "fallecidos_reportados": 18
+    },
+    {
+      "codigo_ruta": "PE-1N",
+      "departamento": "LA LIBERTAD",
+      "registros_accidentes": 133,
+      "fallecidos_reportados": 38
+    },
+    {
+      "codigo_ruta": "PE-34A",
+      "departamento": "AREQUIPA",
+      "registros_accidentes": 129,
+      "fallecidos_reportados": 17
+    },
+    {
+      "codigo_ruta": "PE-30C",
+      "departamento": "MADRE DE DIOS",
+      "registros_accidentes": 107,
+      "fallecidos_reportados": 12
+    }
+  ],
+  "spearman_speed_accidents": 0.4657639870959304,
+  "speed_units": 76,
+  "top3_share_percent": 36.46689221846302,
+  "totals": {
+    "fatalities_reported": 696,
+    "injuries_reported": 5367
+  },
+  "figures": [
+    "01_concentracion_departamentos.png",
+    "02_evolucion_mensual.png",
+    "03_cobertura_integracion.png",
+    "04_asociacion_velocidad_accidentes.png"
+  ]
+}
