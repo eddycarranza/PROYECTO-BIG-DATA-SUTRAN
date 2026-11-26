@@ -3,11 +3,15 @@
 from urllib.parse import unquote_plus
 
 import boto3
+from botocore.config import Config
 
 BUCKET = "sutran-g5-datos-2026-4821"
 PREFIX = "entradas/accidentes/"
 JOB_NAME = "sutran-pipeline-completo"
-glue = boto3.client("glue")
+glue = boto3.client(
+    "glue",
+    config=Config(connect_timeout=3, read_timeout=8),
+)
 
 
 def lambda_handler(event, context):
